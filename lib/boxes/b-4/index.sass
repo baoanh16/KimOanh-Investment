@@ -1,0 +1,37 @@
+@import ../../_includes
+
+.canhcam-boxes-4
+	background: url(../img/kimoanh/index/index-7.jpg) no-repeat center
+	background-size: cover
+	+pad(0 0 2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(0 0 3rem 0)
+	.slide-for
+		.item-for
+			box-shadow: 0 0 5px lighten(color-get($mau,den), 50%)
+	h3 
+		color: color-get($mau,den-1)
+		font-weight: 500 
+		margin-bottom: 0.8rem
+		+fz(1.14rem)
+	figure
+		margin: 0
+	.text
+		+pad(3rem 2rem 4rem 0)
+		+fz(.92rem)
+		padding-left: 2rem
+		.date
+			color: color-get($mau,xam-10)
+			.fas
+				+mar(0 0.25rem 0 0)
+		.descrip
+			color: color-get($mau,den-2)
+			+mar(0 0 3rem 0)
+		.link
+			// +pad(0.5rem 1rem)
+			width: 140px
+			height: 35px
+			display: flex
+			align-items: center
+			justify-content: center
+			border: 1px solid color-get($mau,main)

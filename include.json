@@ -1,0 +1,149 @@
+{
+    "SETUP": {
+        "index": {
+            "header": [
+                "header/h-7"
+            ],
+            "body": [
+                "banner/b-1",
+                "boxes/b-2",
+                "boxes/b-3",
+                "boxes/b-4",
+                "boxes/b-9",
+
+                "carousel/c-1",
+                "form/f-6"
+            ],
+            "footer": [
+                "footer/f-5"
+            ]
+        },
+        "project": {
+            "header": [
+                "header/h-7"
+            ],
+            "body": [
+                "breadcrumb/b-1",
+
+                "nav/n-2",
+                "news/n-1",
+                "news/n-2",
+                "form/f-6"
+            ],
+            "footer": [
+                "footer/f-5"
+            ]
+        },
+        "news": {
+            "header": [
+                "header/h-7"
+            ],
+            "body": [
+                "breadcrumb/b-1",
+
+                "nav/n-2",
+                "news/n-3",
+                "pagination/p-1"
+            ],
+            "footer": [
+                "footer/f-9"
+            ]
+        },
+        "news-detail": {
+            "header": [
+                "header/h-7"
+            ],
+            "body": [
+                "breadcrumb/b-1",
+
+                "nav/n-2",
+                "news-details/n-1"
+            ],
+            "footer": [
+                "footer/f-9"
+            ]
+        },
+        "gallery": {
+            "header": [
+                "header/h-7"
+            ],
+            "body": [
+                "breadcrumb/b-1",
+
+                "nav/n-2",
+                "gallery/g-3"
+            ]
+        },
+        "job": {
+            "header": [
+                "header/h-7"
+            ],
+            "body": [
+                "breadcrumb/b-1",
+
+                "nav/n-2",
+                "gallery/g-3"
+            ],
+            "footer": [
+                "footer/f-9"
+            ]
+        },
+        "job-detail": {
+            "header": [
+                "header/h-7"
+            ],
+            "body": [
+                "breadcrumb/b-1",
+                "news-details/n-1"
+            ],
+            "footer": [
+                "footer/f-9"
+            ]
+        },
+        "video": {
+            "header": [
+                "header/h-7"
+            ],
+            "body": [
+                "breadcrumb/b-1",
+
+                "nav/n-2",
+                "gallery/g-2"
+            ],
+            "footer": [
+                "footer/f-9"
+            ]
+        },
+        "contact": {
+            "header": [
+                "header/h-7"
+            ],
+            "body": [
+                "breadcrumb/b-1",
+
+                "boxes/b-1",
+                "form/f-1",
+                "map/m-1"
+            ],
+            "footer": [
+                "footer/f-9"
+            ]
+        },
+        "gioithieu": {
+            "header": [
+                "header/h-7"
+            ],
+            "body": [
+
+                "boxes/b-8",
+
+                "boxes/b-16",
+
+                "tagline/t-13"
+            ],
+            "footer": [
+                "footer/f-9"
+            ]
+        }
+    }
+}

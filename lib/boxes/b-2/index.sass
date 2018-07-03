@@ -1,0 +1,49 @@
+@import ../../_includes
+
+.canhcam-boxes-2
+	+pad(0 0 3rem 0)
+	+media-breakpoint-up(lg)
+		+pad(0 0 6.5rem 0)
+	.img
+		position: relative
+		z-index: 100
+		img
+			width: 100%
+	.content
+		background: color-get($mau, main)
+		+pad(3rem .5rem 3.5rem 2rem)
+		.text
+			max-height: 360px
+			+media-breakpoint-up(md)
+				max-height: 370px
+			overflow-y: scroll
+			z-index: 100
+			color: color-get($mau,back)
+			+fz(1.07rem)
+			padding-right: .75rem
+			.fas
+				+fz(2.55rem)
+				color: color-get($mau, front)
+				&.fa-quote-left
+					margin-right: 1.4rem
+				&.fa-quote-right
+					margin-left: 1.4rem
+			&::-webkit-scrollbar
+				width: 3px
+				background: color-get($mau, cam-1)
+			&::-webkit-scrollbar-thumb
+				width: 3px
+				background: color-get($mau, cam-3)
+		+media-breakpoint-up(lg)
+			transform: translateY(50px)
+			position: relative
+			z-index: 75
+			&:after
+				width: 82%
+				height: 100%
+				content: ''
+				position: absolute
+				top: 0
+				right: 100%
+				background: color-get($mau,main)
+				z-index: 50

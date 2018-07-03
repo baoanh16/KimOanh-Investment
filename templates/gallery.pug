@@ -1,0 +1,12 @@
+extends _layout/layout.pug
+block variables
+	- var title = "gallery"
+	- var description = "Description for gallery page"
+	- var bodyclass = "gallery"
+	- var href = "/gallery.html"
+block header
+	include ../lib/header/h-7/index.pug
+block body
+	include ../lib/breadcrumb/b-1/index.pug
+	include ../lib/nav/n-2/index.pug
+	include ../lib/gallery/g-3/index.pug

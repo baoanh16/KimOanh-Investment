@@ -1,0 +1,32 @@
+@import ../../_includes
+
+.canhcam-tagline-13
+	+pad(2rem 0)
+	text-align: center
+	+media-breakpoint-up(lg)
+		+pad(2.5rem 0)
+	h1
+		position: relative
+		margin-bottom: 1rem
+		color: color-get($mau,main)
+		text-transform: uppercase
+		+fz(2.55rem)
+		+fw(700)
+	span
+		width: 40px
+		height: 2px
+		background: color-get($mau,main)
+		display: block
+		margin: auto
+		position: relative
+		&:after, &:before
+			position: absolute
+			content: ''
+			background: color-get($mau,main)
+			width: 60px
+			height: 2px
+			top: 8px
+		&:after
+			left: 27px
+		&:before
+			right: 27px

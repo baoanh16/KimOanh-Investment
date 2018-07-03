@@ -1,0 +1,61 @@
+@import ../../_includes
+
+.canhcam-tagline-13
+	+pad(2rem 0)
+	text-align: center
+	+media-breakpoint-up(lg)
+		+pad(2.5rem 0)
+	h1
+		position: relative
+		margin-bottom: 1rem
+		color: color-get($mau,main)
+		text-transform: uppercase
+		+fz(2.55rem)
+		+fw(700)
+		// span
+		// 	display: block
+		// 	width: 60px
+		// 	height: 3px
+		// 	background: color-get($mau,main)
+		// 	+pos(abs, calc(100% + 10px) null null calc(50% + 3px))
+		// 	+transform(translateX(-50%))
+		// 	&:after, &:before
+		// 		content: ''
+		// 		display: inline-block
+		// 		width: 0
+		// 		height: 0
+		// 	&:after
+		// 		border-bottom: 3px solid color-get($mau,main)
+		// 		border-right: 3px solid transparent
+		// 		+pos(abs, 0 -3px null null)
+		// 	&:before
+		// 		border-top: 3px solid color-get($mau,main)
+		// 		border-left: 3px solid transparent
+		// 		+pos(abs, 0 null null -3px)
+	// p
+	// 	+media-breakpoint-up(lg)
+	// 		max-width: 50%
+	// 		margin: 0 auto
+
+//////////////////////////////////////
+// CODE
+.canhcam-tagline-13
+	span
+		width: 40px
+		height: 2px
+		background: color-get($mau,main)
+		display: block
+		margin: auto
+		position: relative
+		&:after, &:before
+			position: absolute
+			content: ''
+			background: color-get($mau,main)
+			width: 60px
+			height: 2px
+			top: 8px
+		&:after
+			left: 27px
+		&:before
+			right: 27px
+//////////////////////////////////////

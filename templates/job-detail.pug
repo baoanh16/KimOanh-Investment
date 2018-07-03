@@ -1,0 +1,13 @@
+extends _layout/layout.pug
+block variables
+	- var title = "job-detail"
+	- var description = "Description for job-detail page"
+	- var bodyclass = "job-detail"
+	- var href = "/job-detail.html"
+block header
+	include ../lib/header/h-7/index.pug
+block body
+	include ../lib/breadcrumb/b-1/index.pug
+	include ../lib/news-details/n-1/index.pug
+block footer
+	include ../lib/footer/f-9/index.pug

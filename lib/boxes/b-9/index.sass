@@ -1,0 +1,90 @@
+@import ../../_includes
+
+.canhcam-boxes-9
+	+pad(0 0 2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(0 0 3rem 0)
+	h3 
+		// text-transform: uppercase
+		color: color-get($mau,den-1)
+		font-weight: 500 
+		// position: relative
+		margin-bottom: 0.8rem
+		+fz(1.14rem)
+		// &:before
+		// 	display: block
+		// 	width: 60px
+		// 	height: 2px
+		// 	background: lighten(color-get($mau,extra),0%)
+		// 	content: ''
+		// 	+pos(abs, calc(100% + 10px) null null 0)
+	.text
+		+pad(3rem 2rem 4rem 0)
+		+fz(.92rem)
+		padding-left: 2rem
+	// +media-breakpoint-up(lg)
+	// 	.text 
+	// 		padding-left: 2rem
+			// text-align: justify
+		// .text-odd
+			// text-align: justify
+			// padding-right: 2rem 
+
+
+
+//////////////////////////////////////
+// CODE
+.canhcam-boxes-9
+	background: url(../img/kimoanh/index/index-7.jpg) no-repeat center
+	background-size: cover
+	.top
+		box-shadow: 0 0 5px lighten(color-get($mau,den), 50%)
+	figure
+		margin: 0
+	.text
+		.date
+			color: color-get($mau,xam-10)
+			.fas
+				+mar(0 0.25rem 0 0)
+		.descrip
+			color: color-get($mau,den-2)
+			+mar(0 0 3rem 0)
+		.link
+			// +pad(0.5rem 1rem)
+			width: 140px
+			height: 35px
+			display: flex
+			align-items: center
+			justify-content: center
+			border: 1px solid color-get($mau,main)
+	.bot
+		+mar(0 -.5rem)
+		.item
+			display: block
+			+fz(.92rem)
+			+mar(0 .5rem)
+			box-shadow: 0 0 5px lighten(color-get($mau, den), 50%)
+			background: white
+			+pad(1.3rem)
+			margin-bottom: 1.5rem
+			+media-breakpoint-up(md)
+				margin-bottom: 0
+			.date
+				color: color-get($mau,xam-10)
+				position: relative
+				.fas
+					+mar(0 0.25rem 0 0)
+				&:after
+					content: ''
+					position: absolute
+					width: 100%
+					height: 2px
+					background: color-get($mau,main)
+					top: calc(100% + .35rem)
+					left: 0
+
+			h4
+				+fz(.92rem)
+				+fw(500)
+				color: color-get($mau,den-1)
+//////////////////////////////////////
