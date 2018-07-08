@@ -1,42 +1,50 @@
 @import ../../_includes
-//////////////////////////////////////
-// CODE
-//////////////////////////////////////
 
 .canhcam-boxes-16
-	+pad(3rem 0)
+	+pad(0 0 2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(0 0 3rem 0)
 	.item
 		text-decoration: none
 		figure
+			+media-breakpoint-up(md)
+				+mar(0 0 2rem 0)
+			+media-breakpoint-up(lg)
+				+mar(0 0 5rem 0)
 			.boximg
-				+bor-rad(5px)
-				overflow: hidden
+				// +bor-rad(5px)
+				// overflow: hidden
 				img
 					+opacity(0)
 			figcaption
-				+pad(1rem 0)
+				+pad(1.5rem)
+				background: color-get($mau,trang)
+				border-top: 3px solid color-get($mau, main)
 				h3 
 					+fw(bold)
-					+fz(1.3rem)
-				p 
-					color: lighten(color-get($mau,den),30%)
-					margin-bottom: 0
+					+fz(1.1rem)
+					+mar(0)
+					color: color-get($mau,den)
+					text-transform: uppercase
+				// p 
+				// 	color: lighten(color-get($mau,den),30%)
+				// 	margin-bottom: 0
 		&:hover
 			figure
 				figcaption
-					p 
-						color: lighten(color-get($mau,den),60%)
+					h3
+						color: color-get($mau,main)
 		+media-breakpoint-up(lg)
 			figure
 				position: relative
-				+bor-rad(5px)
-				overflow: hidden
+				// +bor-rad(5px)
+				// overflow: hidden
 				figcaption
 					text-align: center
-					+pos(abs, null null 0 0)
-					+pad(1rem)
+					+pos(abs, 100% null null 0)
+					// +pad(1rem)
 					width: 100%
-					background: lighten(color-get($mau,den),90%)
+					// background: lighten(color-get($mau,den),90%)
 					display: flex
 					align-items: center
 					flex-direction: column
@@ -45,3 +53,20 @@
 						margin-bottom: 0
 					p 
 						padding-top: .5rem
+
+
+
+//////////////////////////////////////
+// CODE
+.canhcam-boxes-16
+	.item
+		position: relative
+		&:after
+			position: absolute
+			content: ''
+			width: 100%
+			height
+
+		&:hover
+
+//////////////////////////////////////

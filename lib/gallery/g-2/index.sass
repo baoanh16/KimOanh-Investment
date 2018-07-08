@@ -1,27 +1,24 @@
 @import ../../_includes
-//////////////////////////////////////
-// CODE
-//////////////////////////////////////
 
 .canhcam-gallery-2
-	+pad(2rem 0)
+	+pad(0 0 2rem 0)
 	+media-breakpoint-up(lg)
-		+pad(4rem 0)
+		+pad(0 0 3rem 0)
 	.gallery-details
 		.item
 			display: flex
 			text-decoration: none
 			height: 100%
-			+bor-rad(5px)
+			// +bor-rad(5px)
 			overflow: hidden
 			figure
 				overflow: hidden
-				+bor-rad(5px)
-				margin-bottom: 2rem
+				// +bor-rad(5px)
+				// margin-bottom: 2rem
 				.boxzoom
 					overflow: hidden
 					position: relative
-					+bor-rad(5px)
+					// +bor-rad(5px)
 					&:after
 						content: ''
 						display: block
@@ -40,20 +37,20 @@
 						z-index: 10
 						+fz(4rem)
 						+transition(all .2s ease-in-out)
-						.mdi-play-circle-outline
-							display: block
-						.mdi-play-circle
-							display: none
+						// .mdi-play-circle-outline
+						// 	display: block
+						// .mdi-play-circle
+						// 	display: none
 					img
-						+bor-rad(5px 5px 0 0)
+						// +bor-rad(5px 5px 0 0)
 						+transition(all .5s ease-in-out)
 						width: 100%
 				figcaption
 					padding: 1rem 0 0 0
-
+					text-align: center
 					h3
 						+fz(1.1rem)
-						+fw(400)
+						+fw(600)
 						color: color-get($mau,den)
 						margin-bottom: 0
 			&:hover
@@ -65,10 +62,10 @@
 							+transform(scale(1.1))
 						.zoom-item
 							+text-sha(1px 1px 3px rgba(0,0,0,.4))
-							.mdi-play-circle-outline
-								display: none
-							.mdi-play-circle
-								display: block
+							// .mdi-play-circle-outline
+							// 	display: none
+							// .mdi-play-circle
+							// 	display: block
 
 
 	&.canhcam-video-fixed-size.lg-outer
@@ -88,3 +85,21 @@
 
 .lg-backdrop.in
 	background: rgba(255,255,255,.8)
+
+
+
+//////////////////////////////////////
+// CODE
+.canhcam-gallery-2
+	.gallery-details
+		.item-wrap
+			box-shadow: 0 0 3px rgba(0,0,0,.25)
+			flex: 0 0 100%
+			max-width: 100%
+			+media-breakpoint-up(sm)
+				flex: 0 0 calc(50% - 4px)
+				max-width: calc(50% - 4px)
+			+media-breakpoint-up(lg)
+				flex: 0 0 calc((100% - 16px) / 3)
+				max-width: calc((100% - 16px) / 3)
+//////////////////////////////////////

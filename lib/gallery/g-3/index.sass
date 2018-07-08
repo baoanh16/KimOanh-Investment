@@ -1,12 +1,9 @@
 @import ../../_includes
-//////////////////////////////////////
-// CODE
-//////////////////////////////////////
 
 .canhcam-gallery-3
-	+pad(2rem 0)
+	+pad(0 0 2rem 0)
 	+media-breakpoint-up(lg)
-		+pad(4rem 0)
+		+pad(0 0 3rem 0)
 	.gallery-details
 		.card-columns
 			+media-breakpoint-up(sm)
@@ -16,16 +13,17 @@
 		.item
 			text-decoration: none
 			height: 100%
-			+bor-rad(5px)
+			// +bor-rad(5px)
 			overflow: hidden
 			figure
 				overflow: hidden
-				+bor-rad(5px)
+				// +bor-rad(5px)
+				position: relative
 				margin-bottom: 1.3rem
 				.boxzoom
 					overflow: hidden
 					position: relative
-					+bor-rad(5px)
+					// +bor-rad(5px)
 					&:after, &:before
 						content: ''
 						display: block
@@ -43,7 +41,7 @@
 					// 	max-height: 200px
 					// 	min-height: 200px
 					img
-						+bor-rad(5px 5px 0 0)
+						// +bor-rad(5px 5px 0 0)
 						+transition(all .5s ease-in-out)
 						width: 100%
 				figcaption
@@ -58,7 +56,7 @@
 					h3
 						+text-sha(1px 1px 3px rgba(0,0,0,.4))
 						color: color-get($mau,trang)
-						+fz(1.1rem)
+						+fz(1.15rem)
 						+fw(400)
 						margin-bottom: 0
 			&:hover
@@ -94,3 +92,26 @@
 
 .lg-backdrop.in
 	background: rgba(255,255,255,.8)
+
+//////////////////////////////////////
+// CODE
+.canhcam-gallery-3
+	.gallery-details
+		.item-wrap
+			flex: 0 0 100%
+			max-width: 100%
+			+media-breakpoint-up(sm)
+				flex: 0 0 calc(50% - 4px)
+				max-width: calc(50% - 4px)
+			+media-breakpoint-up(lg)
+				flex: 0 0 calc((100% - 16px) / 3)
+				max-width: calc((100% - 16px) / 3)
+			.item
+				figure
+					figcaption
+						h3
+							margin-bottom: 1rem
+						p
+							color: color-get($mau, trang)
+							+fz(0.85rem)
+//////////////////////////////////////

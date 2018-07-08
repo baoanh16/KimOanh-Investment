@@ -1,29 +1,49 @@
 @import ../../_includes
-//////////////////////////////////////
-// CODE
-//////////////////////////////////////
 
 .canhcam-boxes-8
-	+pad(2rem 0)
+	+pad(0 0 2rem 0)
 	+media-breakpoint-up(lg)
-		+pad(4rem 0)
+		+pad(0 0 3rem 0)
 	.box-info
-		background: darken(color-get($mau,trang) ,5%)
-		+bor-rad(5px)
+		// background: darken(color-get($mau,trang) ,5%)
+		// +bor-rad(5px)
 		overflow: hidden
 		img 
 			max-width: 100%
 		.text
 			position: relative
-			+mar(2rem)
-			+pad(2rem)
+			+mar(3rem 2rem)
+			+media-breakpoint-up(lg)
+				+mar(0 2rem 3rem 2rem)
+			// +pad(2rem)
 			max-height: 500px
 			display: flex
 			flex-direction: column
-			background: darken(color-get($mau,trang) ,3%)
-			overflow: scroll
+			// background: darken(color-get($mau,trang) ,3%)
+			overflow-y: scroll
 		+media-breakpoint-up(md)
 			img 
 				+opacity(0)
 				display: none
-	
+
+
+
+//////////////////////////////////////
+// CODE
+.canhcam-boxes-8
+	.box-info
+		.text
+			.fas
+				+fz(2.55rem)
+				color: color-get($mau, xam-2)
+				&.fa-quote-left
+					margin-right: 1.4rem
+				&.fa-quote-right
+					margin-left: 1.4rem
+			&::-webkit-scrollbar
+				width: 3px
+				background: color-get($mau, xam-2)
+			&::-webkit-scrollbar-thumb
+				width: 3px
+				background: color-get($mau, main)
+//////////////////////////////////////

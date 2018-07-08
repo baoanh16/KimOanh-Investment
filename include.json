@@ -10,7 +10,6 @@
                 "boxes/b-3",
                 "boxes/b-4",
                 "boxes/b-9",
-
                 "carousel/c-1",
                 "form/f-6"
             ],
@@ -24,11 +23,8 @@
             ],
             "body": [
                 "breadcrumb/b-1",
-
                 "nav/n-2",
-                "news/n-1",
-                "news/n-2",
-                "form/f-6"
+                "boxes/b-7"
             ],
             "footer": [
                 "footer/f-5"
@@ -40,8 +36,7 @@
             ],
             "body": [
                 "breadcrumb/b-1",
-
-                "nav/n-2",
+                "nav/n-3",
                 "news/n-3",
                 "pagination/p-1"
             ],
@@ -80,9 +75,8 @@
             ],
             "body": [
                 "breadcrumb/b-1",
-
-                "nav/n-2",
-                "gallery/g-3"
+                "boxes/b-11",
+                "boxes/b-10"
             ],
             "footer": [
                 "footer/f-9"
@@ -134,11 +128,12 @@
                 "header/h-7"
             ],
             "body": [
-
+                "nav/n-1",
                 "boxes/b-8",
 
                 "boxes/b-16",
-
+                "boxes/b-5",
+                "boxes/b-6",
                 "tagline/t-13"
             ],
             "footer": [

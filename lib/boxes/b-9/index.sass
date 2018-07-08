@@ -7,7 +7,7 @@
 	h3 
 		// text-transform: uppercase
 		color: color-get($mau,den-1)
-		font-weight: 500 
+		font-weight: 600
 		// position: relative
 		margin-bottom: 0.8rem
 		+fz(1.14rem)
@@ -19,9 +19,8 @@
 		// 	content: ''
 		// 	+pos(abs, calc(100% + 10px) null null 0)
 	.text
-		+pad(3rem 2rem 4rem 0)
+		+pad(3rem 2rem 4rem 2rem)
 		+fz(.92rem)
-		padding-left: 2rem
 	// +media-breakpoint-up(lg)
 	// 	.text 
 	// 		padding-left: 2rem
@@ -38,10 +37,12 @@
 	background: url(../img/kimoanh/index/index-7.jpg) no-repeat center
 	background-size: cover
 	.top
-		box-shadow: 0 0 5px lighten(color-get($mau,den), 50%)
+		box-shadow: 0 2px 5px lighten(color-get($mau,den), 80%)
 	figure
 		margin: 0
 	.text
+		background: color-get($mau,trang)
+		height: 100%
 		.date
 			color: color-get($mau,xam-10)
 			.fas
@@ -63,7 +64,7 @@
 			display: block
 			+fz(.92rem)
 			+mar(0 .5rem)
-			box-shadow: 0 0 5px lighten(color-get($mau, den), 50%)
+			box-shadow: 0 2px 5px lighten(color-get($mau, den), 80%)
 			background: white
 			+pad(1.3rem)
 			margin-bottom: 1.5rem

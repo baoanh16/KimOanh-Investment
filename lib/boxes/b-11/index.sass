@@ -1,0 +1,44 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-boxes-11
+	+pad(0 0 2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(0 0 3rem 0)
+	.table
+		thead
+			background: color-get($mau, main)
+			color: color-get($mau,trang)
+			th
+				border: 0
+				+pad(0.75rem 0.75rem 0.75rem 2rem)
+				// text-transform: uppercase
+		tbody
+			td, th
+				border: 0
+				+pad(0.75rem 0.75rem 0.75rem 2rem)
+				+fw(300)
+				a
+					color: color-get($mau, den)
+				.badge
+					margin-left: .5rem
+					+fw(300)
+					+fz(0.9rem)
+					background: color-get($mau, main)
+					+bor-rad(0.6rem)
+			tr
+				+fz(1.1rem)
+				+fw(300)
+				&:nth-child(odd)
+					background: darken(color-get($mau,trang),3%)
+				&:nth-child(even)
+					background: darken(color-get($mau,trang),8%)
+				&:hover
+					background: darken(color-get($mau,trang),12%)
+					a
+						color: lighten(color-get($mau, main),12%)
+				p
+					margin-bottom: 0
+

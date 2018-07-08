@@ -1,9 +1,8 @@
 @import ../_includes
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700i,800i,900i')
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i')
 // +font-face('CenturyGothic', "../fonts/", "CenturyGothic")
 
 html, body
-	font-family: 'Montserrat', sans-serif
 	font-size: 14px
 	font-weight: 400
 	height: 100%
@@ -51,6 +50,9 @@ header
 		background: none
 	&.fixedheader
 		+pos(fix, 0 null null 0)
+
+*
+	font-family: 'Montserrat', sans-serif
 
 .btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:not(:disabled):not(.disabled).active,
@@ -242,12 +244,12 @@ header
 			color: color-get($mau,trang)
 		span
 			background: color-get($mau,trang)
-		&:after, &:before
-			background: color-get($mau,trang)
+			&:after, &:before
+				background: color-get($mau,trang)
 	&.orange
 		h1
 			color: color-get($mau,main)
 		span
 			background: color-get($mau,main)
-		&:after, &:before
-			background: color-get($mau,main)
+			&:after, &:before
+				background: color-get($mau,main)

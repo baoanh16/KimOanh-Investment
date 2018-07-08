@@ -1,0 +1,28 @@
+@import ../../_includes
+
+.canhcam-boxes-5
+	+pad(0 0 2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(0 0 3rem 0)
+	.item
+		.img
+			+mar(0 0 1.5rem 0)
+			display: flex
+			align-items: flex-end
+			justify-content: center
+			+media-breakpoint-up(lg)
+				justify-content: flex-start
+		h5
+			+fz(1rem)
+			+fw(600)
+			color: color-get($mau,main)
+			text-transform: uppercase
+			+mar(0 0 1.5rem 0)
+			text-align: center
+			+media-breakpoint-up(lg)
+				text-align: left
+		ul
+			+pad(0 0 0 1.25rem)
+			li
+				+fz(1rem)
+				color: color-get($mau, den-1)
