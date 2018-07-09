@@ -14,7 +14,7 @@
                 "form/f-6"
             ],
             "footer": [
-                "footer/f-5"
+                "footer/f-7"
             ]
         },
         "project": {
@@ -27,7 +27,7 @@
                 "boxes/b-7"
             ],
             "footer": [
-                "footer/f-5"
+                "footer/f-7"
             ]
         },
         "news": {
@@ -41,7 +41,7 @@
                 "pagination/p-1"
             ],
             "footer": [
-                "footer/f-9"
+                "footer/f-7"
             ]
         },
         "news-detail": {
@@ -55,7 +55,7 @@
                 "news-details/n-1"
             ],
             "footer": [
-                "footer/f-9"
+                "footer/f-7"
             ]
         },
         "gallery": {
@@ -79,7 +79,7 @@
                 "boxes/b-10"
             ],
             "footer": [
-                "footer/f-9"
+                "footer/f-7"
             ]
         },
         "job-detail": {
@@ -91,7 +91,7 @@
                 "news-details/n-1"
             ],
             "footer": [
-                "footer/f-9"
+                "footer/f-7"
             ]
         },
         "video": {
@@ -105,7 +105,7 @@
                 "gallery/g-2"
             ],
             "footer": [
-                "footer/f-9"
+                "footer/f-7"
             ]
         },
         "contact": {
@@ -120,7 +120,7 @@
                 "map/m-1"
             ],
             "footer": [
-                "footer/f-9"
+                "footer/f-7"
             ]
         },
         "gioithieu": {
@@ -137,7 +137,7 @@
                 "tagline/t-13"
             ],
             "footer": [
-                "footer/f-9"
+                "footer/f-7"
             ]
         }
     }
