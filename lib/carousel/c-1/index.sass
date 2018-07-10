@@ -4,24 +4,24 @@
 	+pad(2rem 0)
 	+media-breakpoint-up(lg)
 		+pad(3rem 0)
-	// .owl-carousel
-		// Main
-		// .owl-stage-outer
-		// Nav
-		// .owl-nav
-		// 	button
-		// 		&.owl-prev, &.owl-next
-		// 			+pad(.5rem_)
-		// 			width: 3rem
-		// 			height: 3rem
-		// 			background: darken(color-get($mau,trang),5%)
-		// 			+bor-rad(50%)
-		// 			text-align: center
-		// 			&:focus
-		// 				outline: none
-		// 		&:hover, &.active
-		// 			&.owl-prev, &.owl-next
-		// 				background: color-get($mau,main)
+	.owl-carousel
+		Main
+		.owl-stage-outer
+		Nav
+		.owl-nav
+			button
+				&.owl-prev, &.owl-next
+					+pad(.5rem_)
+					width: 36px
+					height: 36px
+					background: color-get($mau,xam-14)
+					+bor-rad(0)
+					text-align: center
+					&:focus
+						outline: none
+				&:hover, &.active
+					&.owl-prev, &.owl-next
+						background: color-get($mau,main)
 		// Dots
 		// .owl-dots
 		// 	.owl-dot
@@ -38,40 +38,25 @@
 // CODE
 	
 .canhcam-carousel-1
-	background: color-get($mau, trang)
-	.list-items
-		position: relative
-		.item
-			display: flex
-			align-items: center
-			justify-content: center
-			border: 1px solid color-get($mau,xam-5)
-			// +pad(1.5rem 0)
-		.owl-nav
-			margin-top: 0
-			position: absolute
-			width: 100%
-			top: 50%
-			left: 0
-			transform: translateY(-50%)
-			// display: flex
-			// justify-content: space-between
-			.owl-prev
-				left: 0
-			.owl-next
-				right: 0
-			button
-				+bor-rad(0)
-				transform: translateY(-50%)
+	.owl-carousel
+		+media-breakpoint-up(lg)
+			.owl-nav
+				margin-top: 0
 				position: absolute
-				top: 0
-				margin: 0
-				width: 36px
-				height: 36px
-				background: color-get($mau,xam-14)
-				&:hover
-					background: color-get($mau, main)
-				span
-					+fz(2rem)
+				width: 100%
+				top: 50%
+				left: 0
+				transform: translateY(-50%)
+				.owl-prev
+					left: 0
+				.owl-next
+					right: 0
+				button
+					transform: translateY(-50%)
+					position: absolute
+					top: 0
+					margin: 0
+					span
+						+fz(2rem)
 
 //////////////////////////////////////

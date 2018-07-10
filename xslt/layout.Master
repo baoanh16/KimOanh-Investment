@@ -183,7 +183,11 @@ script(src='//oss.maxcdn.com/respond/1.4.2/respond.min.js')
                                     <portal:ModuleWrapper ID="mdl146" runat="server" ConfigureModuleId="146" />
                                 </div>
                                 <div class="col-lg-5 text-center text-lg-left mb-4 subscribe">
-                                    <portal:ModuleWrapper ID="mdl145" runat="server" ConfigureModuleId="145" />
+                                    <div class="validator d-flex justify-content-center">
+                                        <div class="form-group d-flex w-100">
+                                            <portal:ModuleWrapper ID="mdl145" runat="server" ConfigureModuleId="145" />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="lines"></div>
