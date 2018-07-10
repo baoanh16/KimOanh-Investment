@@ -22,15 +22,15 @@
 			+pad(0)
 			position: relative
 			background: none
-			+opacity(.8)
-			&:before
-				content: ''
-				display: block
-				min-width: 1000px
-				height: 2.5rem
-				// background: color-get($mau,main)
-				+pos(abs, 0 100% null null)
-			.breadcrumb-item
+			// +opacity(.8)
+			// &:before
+			// 	content: ''
+			// 	display: block
+			// 	min-width: 1000px
+			// 	height: 2.5rem
+			// background: color-get($mau,main)
+			// 	+pos(abs, 0 100% null null)
+			li
 				// background: color-get($mau,main)
 				+pad(1rem .5rem)
 				position: relative
@@ -42,13 +42,17 @@
 					padding-left: 0
 				a
 					color: color-get($mau,trang)
-				+ .breadcrumb-item
+				+ li
 					&:before
 						color: color-get($mau,trang)
 						content: '\e876'
 						font-family: 'Linearicons-Free'
 						line-height: 1
 						overflow: hidden
+						padding-right: 0.5rem
+				// + li
+				// 	&:before
+				// 		content: none
 				// &:last-child
 				// 	&:after
 				// 		content: ''
