@@ -13,6 +13,7 @@
 			overflow: hidden
 			figure
 				overflow: hidden
+				width: 100%
 				// +bor-rad(5px)
 				// margin-bottom: 2rem
 				.boxzoom
@@ -27,9 +28,9 @@
 						width: 100%
 						height: 100%
 						+pos(abs, 0 0 null null)
-					+media-breakpoint-up(sm)
-						max-height: 200px
-						min-height: 200px
+					// +media-breakpoint-up(sm)
+					// 	max-height: 200px
+					// 	min-height: 200px
 					.zoom-item
 						color: color-get($mau,trang)
 						+pos(abs, 50% null null 50%)
@@ -91,15 +92,21 @@
 //////////////////////////////////////
 // CODE
 .canhcam-gallery-2
+	.gallery-lists
+		+mar(0)
+		+media-breakpoint-up(sm)
+			+mar(0 -4px 0 -4px)
 	.gallery-details
 		.item-wrap
-			box-shadow: 0 0 3px rgba(0,0,0,.25)
 			flex: 0 0 100%
 			max-width: 100%
+			+pad(0 4px 0 4px)
 			+media-breakpoint-up(sm)
-				flex: 0 0 calc(50% - 4px)
-				max-width: calc(50% - 4px)
+				flex: 0 0 50%
+				max-width: 50%
 			+media-breakpoint-up(lg)
-				flex: 0 0 calc((100% - 16px) / 3)
-				max-width: calc((100% - 16px) / 3)
+				flex: 0 0 calc(100% / 3)
+				max-width: calc(100% / 3)
+			.item
+				box-shadow: 0 0 3px rgba(0,0,0,.25)
 //////////////////////////////////////
