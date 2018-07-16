@@ -21,3 +21,25 @@
 				margin-bottom: 0
 				+fz(.9rem)
 				color: color-get($mau,do-1)
+	
+//////////////////////////////////////
+// customize
+	.form-group
+		position: relative
+		width: 100%	
+		&.ct-subject
+			display: none
+		span
+			+pos(abs,72% 26px null null)
+			transform: translateY(-50%)
+			color: red
+			
+	+media-breakpoint-up(md)
+		.wrap-contact
+			display: flex
+			flex-wrap: wrap
+			.form-group
+				width: 50%
+				+pad(0 15px)
+				&.ct-message
+					width: 100%
