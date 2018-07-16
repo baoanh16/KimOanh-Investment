@@ -21,45 +21,21 @@
 				margin-bottom: 0
 				+fz(.9rem)
 				color: color-get($mau,do-1)
-//////////////////////////////////////
-// customize
-.canhcam-form-1
-	+pad(2rem 0)
-	+media-breakpoint-up(lg)
-		+pad(4rem 0)
-	.info
-		h3
-			+fz(1.3rem)
-			text-transform: uppercase
-		.inf
-			+pad(2rem)
-			h2
-				+fz(1.3rem)
-	form
-		.help-block
-			ul
-				margin-bottom: 0
-				+fz(.9rem)
-				color: color-get($mau,do-1)
 	
 //////////////////////////////////////
 // customize
-	.ct-subject
-		display: none
 	.form-group
 		position: relative
+		width: 100%	
+		&.ct-subject
+			display: none
 		span
 			+pos(abs,72% 26px null null)
 			transform: translateY(-50%)
 			color: red
-
-	+media-breakpoint-up(sm)
-		.form-group
-			width: 100%	
-			flex-direction: column
 			
 	+media-breakpoint-up(md)
-		#ctl00_mainContent_ctl05_pnlSend
+		.wrap-contact
 			display: flex
 			flex-wrap: wrap
 			.form-group
@@ -67,86 +43,3 @@
 				+pad(0 15px)
 				&.ct-message
 					width: 100%
-
-				
-		
-			
-
-
-	
-
-
-
-	
-//////////////////////////////////////
-// customize 
-.canhcam-form-1
-	.wrap-contact
-		#ctl00_mainContent_ctl05_pnlSend
-			.form-group
-				&.ct-button
-					width: 100%
-					display: flex
-					align-items: center
-					// +pad(0 50%)
-					input
-						background: color-get($mau,main)
-						color: color-get($mau,trang)
-						border-radius: 0
-						width: 6rem
-					+media-breakpoint-up(sm)
-						align-items: center
-
-//////////////////////////////////////
-	.form-group
-		position: relative
-		span
-			+pos(abs,72% 26px null null)
-			transform: translateY(-50%)
-			color: red
-
-	+media-breakpoint-up(sm)
-		.form-group
-			width: 100%	
-			flex-direction: column
-			
-	+media-breakpoint-up(md)
-		#ctl00_mainContent_ctl05_pnlSend
-			display: flex
-			flex-wrap: wrap
-			.form-group
-				width: 50%
-				+pad(0 15px)
-				&.ct-message
-					width: 100%
-
-				
-		
-			
-
-
-	
-
-
-
-	
-//////////////////////////////////////
-// customize 
-.canhcam-form-1
-	.wrap-contact
-		#ctl00_mainContent_ctl05_pnlSend
-			.form-group
-				&.ct-button
-					width: 100%
-					display: flex
-					align-items: center
-					// +pad(0 50%)
-					input
-						background: color-get($mau,main)
-						color: color-get($mau,trang)
-						border-radius: 0
-						width: 6rem
-					+media-breakpoint-up(sm)
-						align-items: center
-
-//////////////////////////////////////
