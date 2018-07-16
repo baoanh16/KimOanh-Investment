@@ -4,17 +4,13 @@
 
 	<!--Begin News-->
 	<xsl:template match="/">
-		<section class="canhcam-boxes-7">
-			<div class="container">
 			<!--Title-->
-				<div class="project-slide owl-carousel owl-theme">
-					<xsl:apply-templates select="/NewsList/News" mode="newsNav"></xsl:apply-templates>
-				</div>
-				<div class="project-nav row no-gutters justify-content-between owl-carousel owl-theme">
-					<xsl:apply-templates select="/NewsList/News" mode="newsFor"></xsl:apply-templates>
-				</div>
-			</div>
-		</section>
+		<div class="project-slide owl-carousel owl-theme">
+			<xsl:apply-templates select="/NewsList/News" mode="newsNav"></xsl:apply-templates>
+		</div>
+		<div class="project-nav row no-gutters justify-content-between owl-carousel owl-theme">
+			<xsl:apply-templates select="/NewsList/News" mode="newsFor"></xsl:apply-templates>
+		</div>
 	</xsl:template>
 
 	<xsl:template match="News" mode="newsNav">
