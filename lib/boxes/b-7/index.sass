@@ -51,14 +51,15 @@
 			justify-content: space-between
 			[class*='owl-']
 				margin: 0
-				width: 40px
-				height: 40px
+				width: 36px
+				height: 36px
 				background: rgba(255,255,255,0.75)
 				position: relative
+				+bor-rad(0)
 				&:hover
 					background: color-get($mau, main)
 				i
-					+fz(1.45rem)
+					+fz(1rem)
 					position: absolute
 					top: 50%
 					left: 50%
