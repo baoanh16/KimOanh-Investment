@@ -4,7 +4,6 @@
 	<xsl:output method="html" indent="yes" />
 
 	<xsl:template match="/">
-
 		<section class="canhcam-job-details-1">
 			<article class="job-details">
 				<div class="container">
@@ -38,10 +37,7 @@
 						</div>
 					</div>
 				</div>
-
-
 			</article>
-
 		</section>
 
 	</xsl:template>

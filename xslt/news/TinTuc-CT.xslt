@@ -4,7 +4,6 @@
 
 	<!--Begin News-->
 	<xsl:template match="/">
-
 		<section class="canhcam-news-details-1">
 			<article class="news-details">
 				<div class="container">
@@ -20,20 +19,8 @@
 								</time>
 								<xsl:value-of select="/NewsDetail/EditLink" disable-output-escaping="yes"></xsl:value-of>
 								<div class="content">
-									<xsl:value-of select="/NewsDetail/FullContent" disable-output-escaping="yes"></xsl:value-of>
+									<xsl:value-of select="/NewsDetail/BriefContent" disable-output-escaping="yes"></xsl:value-of>
 								</div>
-								
-								<!-- <div class="social-networks nav">
-									<div class="nav-item">
-										<div class="fb-share-button" data-href="" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="">Chia sẻ</a></div>
-									</div>
-									<div class="nav-item">
-										<a class="twitter-share-button" href="https://twitter.com/share" data-size="medium" data-text="custom share text" data-url="" data-via="twitterdev" data-related="twitterapi,twitter">Tweet</a>
-									</div>
-									<div class="nav-item">
-										<div class="g-plusone" data-size="tall"></div>
-									</div>
-								</div> -->
 							</div>
 						</div>
 						<!--Other News-->
@@ -43,6 +30,7 @@
 									<xsl:value-of select="/NewsDetail/NewsOtherText"></xsl:value-of>
 								</h2>
 								<hr>
+								</hr>
 								<div class="lists">
 									<xsl:apply-templates select="/NewsDetail/NewsOther"></xsl:apply-templates>
 								</div>
@@ -54,6 +42,8 @@
 		</section>
 	</xsl:template>
 
+	<xsl:template match="News">
+	</xsl:template>
 	<!--Begin News Other Child-->
 	<xsl:template match="NewsOther">
 		<!--item-->

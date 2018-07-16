@@ -103,19 +103,8 @@
 			margin: 0 -15px
 			+media-breakpoint-up(sm)
 				margin: 0 -4px
-			+media-breakpoint-up(lg)
-				margin: 0 calc(-16px / 3)
 		.item-wrap
-			flex: 0 0 100%
-			max-width: 100%
-			+media-breakpoint-up(sm)
-				flex: 0 0 50%
-				max-width: 50%
-				padding: 0 4px
-			+media-breakpoint-up(lg)
-				flex: 0 0 calc(100% / 3)
-				max-width: calc(100% / 3)
-				padding: 0 calc(16px / 3)
+			+pad(0 4px)
 			.item
 				figure
 					figcaption

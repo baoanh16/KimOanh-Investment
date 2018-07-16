@@ -77,7 +77,9 @@
 						</span>
 					</p>
 					<a>
-						
+						<xsl:attribute name="href">
+							<xsl:value-of select="Url"></xsl:value-of>
+						</xsl:attribute>
 						<h4 class="h4">
 							<xsl:value-of select="Title"></xsl:value-of>
 						</h4>
