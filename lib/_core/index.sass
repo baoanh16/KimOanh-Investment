@@ -255,6 +255,7 @@ header
 				background: color-get($mau,main)
 .pagination
 	justify-content: center
+	+pad(2rem 0 0 0)
 	li
 		width: 2rem
 		height: 2rem
@@ -264,6 +265,9 @@ header
 		background: none
 		margin-right: 1rem
 		border: 1px solid color-get($mau,main)
-	&:hover
-		background: color-get($mau,main)
-		color: color-get($mau,trang)
+		&:hover
+			background: color-get($mau,main)
+			color: color-get($mau,trang)
+			a
+				color: color-get($mau,trang)
+				text-decoration: none
