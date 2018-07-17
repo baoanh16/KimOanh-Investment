@@ -23,11 +23,10 @@
 // customize
 .canhcam-form-1
 	+pad(2rem 0)
-	+media-breakpoint-up(lg)
 	.info
 		h3
 			+fz(1.1rem)
-			text-transform: uppercase
+			// text-transform: uppercase
 		.inf
 			+pad(2rem)
 			h2
@@ -54,34 +53,32 @@
 		#ctl00_mainContent_ctl05_reqMessage
 			top: 20%
 			right: 3%
-	+media-breakpoint-up(md)
-		#ctl00_mainContent_ctl05_pnlSend
-			+mar(0 -15px)
-			display: flex
-			flex-wrap: wrap
-			.form-group
-				width: 50%
-				+pad(0 15px)
-				&.ct-message
-					width: 100%
-
-
-.canhcam-form-1
+	+media-breakpoint-up(lg)
+		.Module.Module-198
+			max-width: calc((100% / 12) * 9)
+			flex: 0 0 calc((100% / 12) * 9)
+			+mar(0 auto)
 	.wrap-contact
 		#ctl00_mainContent_ctl05_pnlSend
 			.form-group
+				width: 100%
 				&.ct-button
-					width: 100%
+					// width: 100%
 					display: flex
-					align-items: left
-					// +pad(0 50%)
+					.frm-btnwrap
+						+mar(0 auto)
 					input
 						background: color-get($mau,main)
 						color: color-get($mau,trang)
 						border-radius: 0
 						width: 6rem
-
-				
-
-
-//////////////////////////////////////
+			+media-breakpoint-up(lg)
+				+mar(0 -15px)
+				display: flex
+				flex-wrap: wrap
+				justify-content: center
+				.form-group
+					width: calc((100% / 12) * 4.5)
+					+pad(0 15px)
+					&.ct-message
+						width: calc((100% / 12) * 9)
