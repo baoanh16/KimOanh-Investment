@@ -32,9 +32,10 @@
 		#ctl00_mainContent_ctl05_pnlSend
 			display: flex
 			flex-wrap: wrap
-			+mar(0 -15px)
 		.form-group
-			width: 100%	
+			width: 100%
+			label
+				display: none
 			&.ct-subject
 				display: none
 			span
@@ -43,6 +44,7 @@
 				color: red
 	+media-breakpoint-up(md)
 		#ctl00_mainContent_ctl05_pnlSend
+			+mar(0 -15px)
 			display: flex
 			flex-wrap: wrap
 			.form-group
