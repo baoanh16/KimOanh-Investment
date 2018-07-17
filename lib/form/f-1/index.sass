@@ -1,7 +1,4 @@
 @import ../../_includes
-//////////////////////////////////////
-// CODE
-//////////////////////////////////////
 
 // .canhcam-form-1
 // 	+pad(2rem 0)
@@ -37,7 +34,6 @@
 			flex-wrap: wrap
 			+mar(0 -15px)
 		.form-group
-			position: relative
 			width: 100%	
 			&.ct-subject
 				display: none
@@ -46,7 +42,7 @@
 				transform: translateY(-50%)
 				color: red
 	+media-breakpoint-up(md)
-		.wrap-contact
+		#ctl00_mainContent_ctl05_pnlSend
 			display: flex
 			flex-wrap: wrap
 			.form-group
@@ -54,3 +50,32 @@
 				+pad(0 15px)
 				&.ct-message
 					width: 100%
+
+				
+		
+			
+
+
+	
+
+
+
+
+.canhcam-form-1
+	.wrap-contact
+		#ctl00_mainContent_ctl05_pnlSend
+			.form-group
+				&.ct-button
+					width: 100%
+					display: flex
+					align-items: center
+					// +pad(0 50%)
+					input
+						background: color-get($mau,main)
+						color: color-get($mau,trang)
+						border-radius: 0
+						width: 6rem
+					+media-breakpoint-up(sm)
+						align-items: center
+
+//////////////////////////////////////
