@@ -25,9 +25,9 @@
 			+fz(.92rem)
 			padding-left: 2rem
 			max-height: calc(345px - 3rem)
+			overflow-y: scroll
 			+media-breakpoint-up(xl)
 				max-height: calc(425px - 3rem)
-			overflow-y: scroll
 			.descrip
 				color: color-get($mau,den-2)
 				+fz(0.91rem)
@@ -43,19 +43,23 @@
 			margin-top: 0
 			position: absolute
 			width: 100%
-			height: 0
 			top: 50%
 			left: 0
 			transform: translateY(-50%)
-			display: flex
-			justify-content: space-between
-			[class*='owl-']
+			button
+				transform: translateY(-50%)
+				background: rgba(255,255,255,0.75)
+				position: absolute
+				top: 0
 				margin: 0
 				width: 36px
 				height: 36px
-				background: rgba(255,255,255,0.75)
-				position: relative
 				+bor-rad(0)
+				position: absolute
+				&.owl-prev
+					left: 0
+				&.owl-next
+					right: 0
 				&:hover
 					background: color-get($mau, main)
 				i
