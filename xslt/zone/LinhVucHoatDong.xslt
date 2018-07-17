@@ -22,9 +22,9 @@
 	<xsl:template match="Zone">
 		<div class="col-md-4">
 			<a class="item">
-				<xsl:attribute name="href">
+				<!-- <xsl:attribute name="href">
 					<xsl:value-of select="Url"></xsl:value-of>
-				</xsl:attribute>
+				</xsl:attribute> -->
 				<figure>
 					<div class="boximg">
 						<xsl:attribute name="bg-img">

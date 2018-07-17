@@ -9,7 +9,7 @@
 				<div class="row">
 					<div class="col-12">
 						<div class="kimoanh-title orange">
-							<h2><xsl:value-of select="/NewsList/ZoneTitle"></xsl:value-of></h2>
+							<h2><xsl:value-of select="/NewsList/ModuleTitle"></xsl:value-of></h2>
 							<span></span>
 						</div>
 					</div>
