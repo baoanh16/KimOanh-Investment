@@ -8,7 +8,7 @@
 			<article class="job-details">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-8 col-lg-8">
+						<div class="col-lg-9">
 							<div class="jobread">
 								<h1>
 									<xsl:value-of select="/NewsDetail/Title"></xsl:value-of>
@@ -24,10 +24,10 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4">
-							<div class="otherjob" data-fix="50" data-fix-type="initial" data-fix-change="sticky">
+						<div class="col-lg-3">
+							<div class="otherjob" data-fix="100" data-fix-type="initial" data-fix-change="sticky">
 								<h2>
-									<xsl:value-of select="/NewsDetail/NewsOtherText"></xsl:value-of>
+									Tuyển dụng khác
 								</h2>
 								<div class="lists">
 									<xsl:apply-templates select="/NewsDetail/NewsOther"></xsl:apply-templates>

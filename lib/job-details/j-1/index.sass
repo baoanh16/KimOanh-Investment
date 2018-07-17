@@ -28,12 +28,23 @@
 				span
 					color: color-get($mau, den-1)
 			ul
-				padding-left: 1.2rem
+				// padding-left: 1.2rem
+				+pad(0)
+				list-style-type: none
 				li
 					margin-bottom: .3rem
 					+fz(1.1rem)
 					+fw(500)
 					color: color-get($mau, den-1)
+					&:before
+						background-color: grey
+						border-radius: 50%
+						content: ""
+						display: inline-block
+						margin-right: 10px
+						margin-bottom: 2px
+						height: 5px
+						width: 5px
 					&:last-child
 						margin-bottom: 0
 			.table-responsive
@@ -61,31 +72,33 @@
 					&.btn-getjob
 						background: color-get($mau,main)
 	.otherjob
-		+bor-rad(5px)
+		// +bor-rad(5px)
 		overflow: hidden
 		width: 100%
 		hr
 			border-top: 1px dashed darken(color-get($mau,trang) ,10%)
 		h2
-			color: color-get($mau,duong-4)
-			+fz(1.4rem)
-			+fw(700)
-			margin-bottom: 2rem
+			color: color-get($mau,trang)
+			+fz(1.25rem)
+			+fw(600)
+			margin-bottom: 1rem
 			position: relative
 			text-transform: uppercase
-			&:before
-				content: ''
-				position: absolute
-				left: 0
-				top: calc(100% + 1rem)
-				width: 100%
-				height: 2px
-				background: color-get($mau,duong-4)
+			background: color-get($mau, main)
+			+pad(1rem)
+			// &:before
+			// 	content: ''
+			// 	position: absolute
+			// 	left: 0
+			// 	top: calc(100% + 1rem)
+			// 	width: 100%
+			// 	height: 2px
+			// 	background: color-get($mau,duong-4)
 
 		p
 			color: color-get($mau,den-1)
 			+fz(.93rem)
-			margin-bottom: 0
+			+mar(0.75rem 0)
 			+fw(400)
 		.lists
 			a

@@ -22,7 +22,17 @@
 			+media-breakpoint-up(lg)
 				text-align: left
 		ul
-			+pad(0 0 0 1.25rem)
+			list-style-type: none
+			+pad(0)
 			li
 				+fz(1rem)
 				color: color-get($mau, den-1)
+				&:before
+					background-color: grey
+					border-radius: 50%
+					content: ""
+					display: inline-block
+					margin-right: 10px
+					margin-bottom: 2px
+					height: 5px
+					width: 5px
