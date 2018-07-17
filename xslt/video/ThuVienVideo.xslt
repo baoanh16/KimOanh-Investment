@@ -18,7 +18,7 @@
 	<!--Begin Video Child-->
 	<xsl:template match="Video">
 		<!--item-->
-		<div class="item-wrap mb-2">
+		<div class="col-sm-6 col-lg-4 item-wrap mb-2 mb-2">
 			<a class="item">
 				<xsl:attribute name="href">
 					<xsl:value-of select="VideoUrl"></xsl:value-of>
