@@ -41,6 +41,11 @@
 			<div class="col-lg-4">
 				<div class="text">
 					<h3 class="h3">
+					<a>
+						<xsl:attribute name="href">
+								<xsl:value-of select="Url"></xsl:value-of>
+						</xsl:attribute>
+					</a>
 						<xsl:value-of select="Title"></xsl:value-of>
 					</h3>
 					<p class="date">
