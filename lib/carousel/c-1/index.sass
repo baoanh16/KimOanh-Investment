@@ -1,6 +1,8 @@
 @import ../../_includes
 
 .canhcam-carousel-1
+	.owl-item
+		border: 1px solid color-get($mau,den)
 	+pad(2rem 0)
 	+media-breakpoint-up(lg)
 		+pad(3rem 0)
@@ -36,9 +38,11 @@
 
 //////////////////////////////////////
 // CODE
-	
+
 .canhcam-carousel-1
-	.owl-carousel
+	.owl-item
+		border: 1px solid color-get($mau,den)
+.owl-carousel
 		+media-breakpoint-up(lg)
 			.owl-nav
 				margin-top: 0
@@ -58,7 +62,7 @@
 					margin: 0
 					span
 						+fz(2rem)
-				item
-					img
-						border: 1px solid color-get($mau,trang)
+			owl-item
+				img
+					border: 1px solid color-get($mau,trang)
 //////////////////////////////////////

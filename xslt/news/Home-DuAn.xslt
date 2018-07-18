@@ -49,7 +49,13 @@
 			<div class="col-lg-4 bg-white">
 				<div class="text">
 					<h3 class="h3">
-						<xsl:value-of select="Title"></xsl:value-of>
+					<a>
+						<xsl:attribute name="href">
+								<xsl:value-of select="Url"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:value-of select="Title"></xsl:value-of>
+					</a>
+						
 					</h3>
 					<p class="descrip">
 						<xsl:value-of select="BriefContent"></xsl:value-of>
