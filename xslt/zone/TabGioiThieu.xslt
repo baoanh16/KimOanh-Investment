@@ -12,11 +12,6 @@
 
 	<xsl:template match="Zone">
 		<li class="nav-item">
-			<!-- <xsl:if test="IsActive='true'">
-			<xsl:attribute name="class">
-				<xsl:text>active</xsl:text>
-			</xsl:attribute>
-			</xsl:if> -->
 			<a class="nav-link">
 				<xsl:attribute name="href">
 					<xsl:text>#about-</xsl:text>

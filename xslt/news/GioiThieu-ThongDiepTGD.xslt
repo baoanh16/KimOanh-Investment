@@ -5,22 +5,18 @@
 	<!--Begin News-->
 
 	<xsl:template match="/">
-		<section class="canhcam-boxes-8" bg-img="Data/Sites/1/skins/default/img/kimoanh/about/about-2.jpg" id="about-1">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<div class="kimoanh-title orange">
-							<h2><xsl:value-of select="/NewsList/ModuleTitle"></xsl:value-of>
-							</h2>
-							<span></span>
-						</div>
-					</div>
-				</div>
-				<div class="row mb-2 box-info no-gutters">
-					<xsl:apply-templates select="/NewsList/News"></xsl:apply-templates>
+		<div class="row">
+			<div class="col-12">
+				<div class="kimoanh-title orange">
+					<h2><xsl:value-of select="/NewsList/ModuleTitle"></xsl:value-of>
+					</h2>
+					<span></span>
 				</div>
 			</div>
-		</section>
+		</div>
+		<div class="row mb-2 box-info no-gutters">
+			<xsl:apply-templates select="/NewsList/News"></xsl:apply-templates>
+		</div>
 	</xsl:template>
 
 	

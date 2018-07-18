@@ -4,9 +4,14 @@
 //////////////////////////////////////
 
 .canhcam-nav-2
-	+pad(2rem 0)
+	+pad(1.75rem 0)
+	background: white
+	z-index: 1000
+	+media-breakpoint-up(md)
+		position: sticky
+		top: 60px
 	+media-breakpoint-up(lg)
-		+pad(2rem 0)
+		top: 78px
 	.nav-item
 		.nav-link
 			background: darken(color-get($mau,trang) ,5%)
