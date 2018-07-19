@@ -16,7 +16,7 @@
 					</div>
 				</div>
 
-				<div class="row no-gutters mb-3 top">
+				<div class="row no-gutters mb-3 home-news-hot">
 					<xsl:apply-templates select="/NewsList/News" mode="Hot"></xsl:apply-templates>
 				</div>
 
@@ -30,24 +30,29 @@
 	<xsl:template match="News" mode="Hot">
 		<xsl:if test="position()=1">
 			<div class="col-lg-8">
-				<figure>
+				<a>
+					<xsl:attribute name="href">
+						<xsl:value-of select="Url"></xsl:value-of>
+					</xsl:attribute>
+					<figure>
 					<img class="img-fluid">
 						<xsl:attribute name="src">
 							<xsl:value-of select="ImageUrl"></xsl:value-of>
 						</xsl:attribute>
 					</img>
-				</figure>
+					</figure>
+				</a>
 			</div>
 			<div class="col-lg-4">
 				<div class="text">
-					<h3 class="h3">
 					<a>
 						<xsl:attribute name="href">
-								<xsl:value-of select="Url"></xsl:value-of>
+							<xsl:value-of select="Url"></xsl:value-of>
 						</xsl:attribute>
+						<h3 class="h3">
+							<xsl:value-of select="Title"></xsl:value-of>
+						</h3>
 					</a>
-						<xsl:value-of select="Title"></xsl:value-of>
-					</h3>
 					<p class="date">
 						<span class="fas fa-calendar-alt"></span>
 						<span>
@@ -57,8 +62,8 @@
 					<p class="descrip">
 						<xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
 					</p>
-					<p class="mb-0 link">
-						<a>
+					<p class="mb-0">
+						<a class="btn btn-primary rounded-0">
 							<xsl:attribute name="href">
 								<xsl:value-of select="Url"></xsl:value-of>
 							</xsl:attribute>

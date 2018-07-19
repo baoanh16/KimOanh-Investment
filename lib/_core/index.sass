@@ -265,9 +265,12 @@ header
 		background: none
 		margin-right: 1rem
 		border: 1px solid color-get($mau,main)
-		&:hover
+		cursor: pointer
+		a
+			background: none
+			color: color-get($mau,den)
+			text-decoration: none
+		&.active, &:hover
 			background: color-get($mau,main)
-			color: color-get($mau,trang)
-			a
-				background: color-get($mau,main)
+			a, span
 				color: color-get($mau,trang)

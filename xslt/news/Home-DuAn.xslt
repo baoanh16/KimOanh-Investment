@@ -49,27 +49,12 @@
 			<div class="col-lg-4 bg-white">
 				<div class="text">
 					<h3 class="h3">
-					<a>
-						<xsl:attribute name="href">
-								<xsl:value-of select="Url"></xsl:value-of>
-							</xsl:attribute>
 							<xsl:value-of select="Title"></xsl:value-of>
-					</a>
-						
 					</h3>
 					<p class="descrip">
 						<xsl:value-of select="BriefContent"></xsl:value-of>
 					</p>
-					<p class="mb-0 link">
-						<a>
-							<xsl:attribute name="href">
-								<xsl:value-of select="Url"></xsl:value-of>
-							</xsl:attribute>
-							Xem chi tiết dự án
-							<i class="mdi mdi-arrow-right">
-							</i>
-						</a>
-					</p>
+					
 				</div>
 			</div>
 		</div>

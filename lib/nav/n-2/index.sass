@@ -4,15 +4,15 @@
 //////////////////////////////////////
 
 .canhcam-nav-2
-	+pad(1.75rem 0)
+	+pad(0.6rem 0)
+	+media-breakpoint-up(lg)
+		+pad(1.75rem 0)
 	background: white
 	z-index: 1000
-	+media-breakpoint-up(md)
-		position: sticky
-		top: 60px
-	+media-breakpoint-up(lg)
-		top: 78px
 	.nav-item
+		+mar(.3rem)
+		+media-breakpoint-up(lg)
+			+mar(0 .3rem)
 		.nav-link
 			background: darken(color-get($mau,trang) ,5%)
 			color: darken(color-get($mau,trang) ,80%)
@@ -20,11 +20,16 @@
 			+fw(600)
 			+fz(.9rem)
 			+bor-rad(3rem)
-			margin-right: .5rem
-		&:last-child
-			.nav-link
-				margin-right: 0
+			&:hover, &.active 
+				background: darken(color-get($mau,main) ,0%)
+				color: color-get($mau,trang)
+			&:last-child
+				.nav-link
+					margin-right: 0
 		&:hover, &.active 
 			.nav-link
 				background: darken(color-get($mau,main) ,0%)
 				color: color-get($mau,trang)
+		&:last-child
+			.nav-link
+				margin-right: 0

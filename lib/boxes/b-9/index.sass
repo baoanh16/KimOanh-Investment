@@ -4,6 +4,8 @@
 	+pad(0 0 2rem 0)
 	+media-breakpoint-up(lg)
 		+pad(0 0 3rem 0)
+	a
+		text-decoration: none
 	h3 
 		// text-transform: uppercase
 		color: color-get($mau,den-1)
@@ -52,14 +54,18 @@
 		.descrip
 			color: color-get($mau,den-2)
 			+mar(0 0 3rem 0)
-		.link
-			// +pad(0.5rem 1rem)
-			width: 140px
-			height: 35px
-			display: flex
-			align-items: center
-			justify-content: center
-			border: 1px solid color-get($mau,main)
+		.btn
+			background: none
+			color: color-get($mau, main)
+			+pad(0.5rem 1.75rem)
+			&:hover
+				background: color-get($mau,main)
+				color: color-get($mau, trang)
+	.home-news-hot
+		&:hover
+			h3
+				color: color-get($mau, main)
+
 	.bot
 		+mar(0 -.5rem)
 		.item
@@ -85,9 +91,13 @@
 					background: color-get($mau,main)
 					top: calc(100% + .35rem)
 					left: 0
-
 			h4
 				+fz(.92rem)
-				+fw(500)
+				+fw(600)
 				color: color-get($mau,den-1)
+			&:hover
+				h4
+					color: color-get($mau, main)
+				a
+					text-decoration: none
 //////////////////////////////////////

@@ -11,7 +11,7 @@
 			width: 100%
 	.content
 		background: color-get($mau, main)
-		+pad(3rem .5rem 3.5rem 2rem)
+		+pad(2.5rem 1.5rem 3.5rem 1.25rem)
 		.text
 			max-height: 360px
 			+media-breakpoint-up(md)
@@ -25,7 +25,21 @@
 				&:first-child
 					&:before
 						content: '\f10d'
-						font-family: "Font Awesome 5 Solid"
+						font-family: 'Font Awesome 5 Free'
+						font-weight: 900
+						font-size: 2.55rem
+						color: color-get($mau, front)
+						margin-right: 1.4rem
+						line-height: 1
+				&:last-child
+					&:after
+						content: '\f10e'
+						font-family: 'Font Awesome 5 Free'
+						+fw(900)
+						+fz(2.55rem)
+						color: color-get($mau, front)
+						margin-left: 1.4rem
+						line-height: 1
 			.fas
 				+fz(2.55rem)
 				color: color-get($mau, front)

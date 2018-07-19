@@ -12,15 +12,29 @@
 							<div class="jobread">
 								<h1>
 									<xsl:value-of select="/NewsDetail/Title"></xsl:value-of>
+									<xsl:value-of select="/NewsDetail/EditLink" disable-output-escaping="yes"></xsl:value-of>
 									<span></span>
 								</h1>
 								<time>
 									<i class="fas fa-calendar-alt"></i>
 									<xsl:value-of select="/NewsDetail/CreatedDate"></xsl:value-of>
 								</time>
-								<xsl:value-of select="/NewsDetail/EditLink" disable-output-escaping="yes"></xsl:value-of>
 								<div class="content">
 									<xsl:value-of select="/NewsDetail/FullContent" disable-output-escaping="yes"></xsl:value-of>
+								</div>
+								<div class="clearfix download">
+									<a class="btn btn-download" href="#">Tải mẫu đơn xin việc
+									</a>
+									<a class="btn btn-getjob" href="javascript:void(0)">
+										<xsl:value-of select="/NewsDetail/ApplyText"></xsl:value-of>
+									</a>
+								</div>
+								<div class="career-frame mrb-xs-30" style="display:none;">
+									<iframe class="frame" frameborder="0" width="100%" height="400px">
+									<xsl:attribute name="src">
+										<xsl:value-of select="/NewsDetail/ApplyUrl" disable-output-escaping="yes"/>
+									</xsl:attribute>
+									</iframe>
 								</div>
 							</div>
 						</div>

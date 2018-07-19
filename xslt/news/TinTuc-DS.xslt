@@ -22,17 +22,27 @@
 	<xsl:template match="News" mode="Hot">
 		<xsl:if test="position()=1">
 			<div class="col-lg-8">
-				<div class="img">
-					<xsl:attribute name="bg-img-responsive">
-						<xsl:value-of select="ImageUrl"></xsl:value-of>
+				<a>
+					<xsl:attribute name="href">
+						<xsl:value-of select="Url"></xsl:value-of>
 					</xsl:attribute>
-				</div>
+					<div class="img">
+						<xsl:attribute name="bg-img-responsive">
+							<xsl:value-of select="ImageUrl"></xsl:value-of>
+						</xsl:attribute>
+					</div>
+				</a>
 			</div>
 			<div class="col-lg-4">
 				<div class="text">
-					<h3 class="h3">
-						<xsl:value-of select="Title"></xsl:value-of>
-					</h3>
+					<a>
+						<xsl:attribute name="href">
+							<xsl:value-of select="Url"></xsl:value-of>
+						</xsl:attribute>
+						<h3 class="h3">
+							<xsl:value-of select="Title"></xsl:value-of>
+						</h3>
+					</a>
 					<p class="date">
 						<span class="fas fa-calendar-alt"></span>
 						<span>
@@ -42,8 +52,8 @@
 					<p class="descrip">
 						<xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
 					</p>
-					<p class="mb-0 link">
-						<a>
+					<p class="mb-0">
+						<a class="btn btn-primary rounded-0">
 							<xsl:attribute name="href">
 								<xsl:value-of select="Url"></xsl:value-of>
 							</xsl:attribute>
@@ -81,7 +91,6 @@
 						<figcaption data-mh="news">
 							<h3>
 								<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
-								<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
 							</h3>
 							<time>
 								<span class="fas fa-calendar-alt"></span>
@@ -94,6 +103,7 @@
 					</figure>
 				</a>
 			</div>
+			<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
 		</xsl:if>
 	</xsl:template>
 </xsl:stylesheet>

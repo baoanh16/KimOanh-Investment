@@ -1,8 +1,6 @@
 @import ../../_includes
 
 .canhcam-carousel-1
-	.owl-item
-		border: 1px solid color-get($mau,den)
 	+pad(2rem 0)
 	+media-breakpoint-up(lg)
 		+pad(3rem 0)
@@ -13,7 +11,8 @@
 		.owl-nav
 			button
 				&.owl-prev, &.owl-next
-					+pad(.5rem_)
+					// +pad(.5rem_)
+					+mar(0)
 					width: 36px
 					height: 36px
 					background: color-get($mau,xam-14)
@@ -40,9 +39,9 @@
 // CODE
 
 .canhcam-carousel-1
-	.owl-item
-		border: 1px solid color-get($mau,den)
-.owl-carousel
+	.owl-carousel
+		.owl-item
+			border: 1px solid color-get($mau,xam-5)
 		+media-breakpoint-up(lg)
 			.owl-nav
 				margin-top: 0
@@ -62,7 +61,4 @@
 					margin: 0
 					span
 						+fz(2rem)
-			owl-item
-				img
-					border: 1px solid color-get($mau,trang)
 //////////////////////////////////////

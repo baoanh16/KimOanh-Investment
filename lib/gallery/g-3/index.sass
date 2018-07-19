@@ -27,7 +27,7 @@
 					overflow: hidden
 					position: relative
 					// +bor-rad(5px)
-					&:after, &:before
+					&:after
 						content: ''
 						display: block
 						z-index: -1
@@ -36,10 +36,7 @@
 						height: 100%
 						+pos(abs, 0 0 null null)
 						+transition(all .5s ease-in-out)
-					&:after
-						+transform(translateY(100%))
-					&:before
-						+transform(translateY(-100%))
+						opacity: 0
 					// +media-breakpoint-up(sm)
 					// 	max-height: 200px
 					// 	min-height: 200px
@@ -53,7 +50,7 @@
 					+transition(all .5s ease-in-out)
 					+opacity(0)
 					+pos(abs, 50% null null 50%)
-					+transform(translateX(-50%) translateY(-50%))
+					+transform(translateX(-50%) translateY(-45%))
 					z-index: 100
 					width: 100%
 					h3
@@ -69,10 +66,7 @@
 					.boxzoom
 						&:after
 							z-index: 1
-							+transform(translateY(50%))
-						&:before
-							z-index: 1
-							+transform(translateY(-50%))
+							opacity: 0.85
 						img
 							+transform(scale(1.1))
 

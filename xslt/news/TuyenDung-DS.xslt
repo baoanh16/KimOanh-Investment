@@ -52,7 +52,6 @@
 					</xsl:attribute>
 					<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
 				</a>
-				<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
 				<xsl:if test="floor(ShowOption div 1) mod 2 = 1">
 					<span class="badge badge-danger ml-auto mr-4">Mới
 					</span>
@@ -68,5 +67,6 @@
 				<xsl:value-of select="EndDate" disable-output-escaping="yes"></xsl:value-of>
 			</td>
 		</tr>
+		<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
 	</xsl:template>
 </xsl:stylesheet>

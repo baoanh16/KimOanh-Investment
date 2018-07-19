@@ -30,9 +30,10 @@
 					<figcaption>
 						<h3>
 							<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
-							<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
 						</h3>
 						<p>
+							<xsl:value-of select="CreatedDate" disable-output-escaping="yes"></xsl:value-of>
+							/
 							<xsl:value-of select="SubTitle" disable-output-escaping="yes"></xsl:value-of>
 						</p>
 					</figcaption>
@@ -46,6 +47,7 @@
 				</div>
 			</div>
 		</div>
+		<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
 	</xsl:template>
 
 	<xsl:template match="NewsImages">

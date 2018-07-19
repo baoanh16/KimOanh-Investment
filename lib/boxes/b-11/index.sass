@@ -22,6 +22,7 @@
 				+fw(300)
 				a
 					color: color-get($mau, den)
+					text-decoration: none
 				.badge
 					margin-left: .5rem
 					+fw(300)
@@ -32,13 +33,12 @@
 				+fz(1.1rem)
 				+fw(300)
 				&:nth-child(odd)
-					background: darken(color-get($mau,trang),3%)
+					background: color-get($mau, xam-4)
 				&:nth-child(even)
-					background: darken(color-get($mau,trang),8%)
-				&:hover
-					background: darken(color-get($mau,trang),12%)
-					a
-						color: lighten(color-get($mau, main),12%)
+					background: color-get($mau,trang)
 				p
 					margin-bottom: 0
+				&:hover
+					a
+						color: color-get($mau, main)
 

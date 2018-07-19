@@ -19,22 +19,22 @@
 			.form-group
 				position: relative
 				button
-					position: absolute
-					right: 0
-					top: 0
-					width: 80px
-					border: 1px solid color-get($mau,trang)
-					border-left: none
+					// position: absolute
+					// right: 0
+					// top: 0
+					// width: 80px
+					// border: 1px solid color-get($mau,trang)
+					// border-left: none
 					// background: none
 					+bor-rad(0)
 					&.disabled
 						+opacity(1)
 				input
-					background: rgba(0,0,0,.2)
-					+bor-rad(0)
-					border: 0
-					padding-left: 0
-					border: 1px solid color-get($mau,trang)
+					// background: rgba(0,0,0,.2)
+					// +bor-rad(0)
+					// border: 0
+					// padding-left: 0
+					// border: 1px solid color-get($mau,trang)
 					&:focus
 						outline: none
 						+box-sha(none)
@@ -49,7 +49,7 @@
 		padding: 0 0 2rem 0
 		+media-breakpoint-up(md)
 			padding: 0 0 3rem 0
-		font-weight: 200
+		font-weight: 400
 		position: relative
 		h6
 			font-size: 1rem
@@ -89,27 +89,28 @@
 								background: rgba(255,255,255,.13)
 								color: lighten(color-get($mau,trang), 0%)
 								border-color: lighten(color-get($mau,trang), 0%)
-		.list-group
-			.list-group-item
-				display: inline-block
-				background: none
-				border: 0
-				padding: .5rem 0
-				p
-					font-size: .9rem
-					color: color-get($mau,cam-1)
-				a
-					font-size: .9rem
-					color: color-get($mau,cam-1)
-					&:hover
-						text-decoration: underline
-						color: lighten(color-get($mau,trang), 0%)
-	.copy-right
-		font-size: .8rem
-		padding: .75rem 1rem
-		background: darken(color-get($mau,trang), 90%)
-		color: darken(color-get($mau,trang), 20%)
-		text-transform: uppercase
+		.container
+			.list-group
+				.list-group-item
+					display: inline-block
+					background: none
+					border: 0
+					padding: .5rem 0
+					p
+						font-size: .9rem
+						color: color-get($mau,cam-1)
+					a
+						font-size: .9rem
+						color: color-get($mau,cam-1)
+						&:hover
+							text-decoration: underline
+							color: lighten(color-get($mau,trang), 0%)
+	// .copy-right
+	// 	font-size: .8rem
+	// 	padding: .75rem 1rem
+	// 	background: darken(color-get($mau,trang), 90%)
+	// 	color: darken(color-get($mau,trang), 20%)
+		// text-transform: uppercase
 	// Khi lên Tablet
 	+media-breakpoint-up(md)
 		.footer-content
@@ -133,6 +134,36 @@
 .canhcam-footer-7
 	.canhcam-sub
 		.subscribe
+			.validator
+				.subscribefrm
+					display: flex
+					input
+						border: 1px solid color-get($mau,trang)
+						border-right: none
+						background: none
+						display: inline-block
+						width: calc(100% - 80px)
+					button
+						position: relative
+						border: 1px solid color-get($mau,trang)
+						display: inline-block
+						width: 80px
+						border-left: none
+						+fz(0)
+						+fw(400)
+						cursor: pointer
+						&:before
+							+fz(1.25rem)
+							+fw(900)
+							-webkit-font-smoothing: antialiased
+							display: inline-block
+							font-style: normal
+							font-variant: normal
+							text-rendering: auto
+							line-height: 1
+							font-family: 'Font Awesome 5 Brands'
+							content: "\f3fe"
+							box-sizing: border-box
 			.form-group
 				.Module.Module-145
 					width: 100%
@@ -161,7 +192,33 @@
 					text-align: center
 	.copy-right
 		background-color: color-get($mau,main)
-
-
-
+		color: color-get($mau, trang)
+		+pad(0.65rem 0)
+		.col-12
+			+mar(0.5rem 0)
+			+media-breakpoint-up(lg)
+				+mar(0)
+		span
+			+fz(0.9rem)
+		.social-icon
+			span
+				+fz(1.1rem)
+				+mar(0 0.5rem)
+		.list-group
+			.list-group-item
+				+pad(0)
+				+mar(0)
+				border: none
+				background: none
+				a
+					+fz(0.9rem)
+					color: color-get($mau, trang)
+				&:after
+					content: '|'
+					+mar(0 0.5rem)
+				&:last-child
+					&:after
+						content: none
+		.Module.Module-200, .ModuleContent, .social-icon
+			height: 100%
 /////////////////////////////////////////////

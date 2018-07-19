@@ -30,6 +30,7 @@
 			outline: none
 	.navbar-brand
 		position: relative
+		+pad(0)
 		img
 			max-height: 2rem
 			+transition(all ease-in-out .3s)
@@ -107,7 +108,9 @@
 			padding-bottom: 0
 			position: relative
 			.navbar-brand
-				+pos(abs, .75rem null null 0rem)
+				+pos(abs, 1.1rem null null null)
+				+media-breakpoint-up(lg)
+					+pos(abs, 1.2rem null null null)
 				// z-index: 1000
 				// +pad(.25rem .15rem)
 				// background: color-get($mau,trang)
@@ -243,7 +246,30 @@
 						display: none
 						+media-breakpoint-up(md)
 							display: unset
-
+	#CCMenuHeader
+		.input-group
+			input
+				display: inline-block
+				// width: 100%
+				+pad(0.375rem 0.75rem)
+				font-size: 1rem
+				line-height: 1.5
+				color: color-get($mau,main)
+				background-color: color-get($mau, trang)
+				background-clip: padding-box
+				border: 1px solid color-get($mau, main)
+			button
+				display: inline-block
+				background: color-get($mau, trang)
+				color: color-get($mau, den)
+				border: 1px solid color-get($mau, main)
+				text-decoration: none
+				border-radius: 0
+				+pad(0.375rem 0.75rem)
+				+media-breakpoint-up(md)
+					cursor: pointer
+					background: color-get($mau, main)
+					color: color-get($mau, trang)
 	// +media-breakpoint-up(lg)
 	// 	.navbar
 	// 		.navbar-nav

@@ -16,6 +16,8 @@
 			+pad(3rem 2rem 3rem 2rem)
 			background: color-get($mau,xam-14)
 			height: 100%
+			a
+				text-decoration: none
 			h3 
 				color: color-get($mau,den-1)
 				font-weight: 600
@@ -26,16 +28,16 @@
 				.fas
 					+mar(0 0.25rem 0 0)
 			.descrip
-				color: color-get($mau,den-2)
-				+mar(0 0 3rem 0)
-			.link
-				// +pad(0.5rem 1rem)
-				width: 140px
-				height: 35px
-				display: flex
-				align-items: center
-				justify-content: center
-				border: 1px solid color-get($mau,main)
+				// color: color-get($mau,den-2)
+				// +mar(0 0 3rem 0)
+				display: none
+			.btn
+				+pad(0.5rem 1.75rem)
+				background: none
+				color: color-get($mau, main)
+				&:hover
+					background: color-get($mau, main)
+					color: white
 	.news-list
 		.item-wrap
 			flex: 0 0 100%
@@ -60,5 +62,13 @@
 				color: color-get($mau, den-2)
 			time
 				+fz(0.85rem)
+				+mar(0 0 0.75rem 0)
 			p
+				max-height: 5.5rem
+				overflow: hidden
+				margin-top: 0.75rem
 				+fz(0.92rem)
+			&:hover
+				.item
+					h3
+						color: color-get($mau, main)

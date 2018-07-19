@@ -4,7 +4,7 @@
 
 
 	<xsl:template match="/">
-		<ul class="nav justify-content-center nav-pills" data-select="">
+		<ul class="nav justify-content-center nav-pills" id="kimoanh-intro-nav">
 			<xsl:apply-templates select="/ZoneList/Zone"></xsl:apply-templates>
 		</ul>
 	</xsl:template>
