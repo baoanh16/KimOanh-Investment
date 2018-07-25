@@ -5,8 +5,6 @@
 	+media-breakpoint-up(lg)
 		+pad(0 0 3rem 0)
 	.box-info
-		// background: darken(color-get($mau,trang) ,5%)
-		// +bor-rad(5px)
 		overflow: hidden
 		img 
 			max-width: 100%
@@ -14,14 +12,12 @@
 			position: relative
 			+mar(3rem 0 3rem 2rem)
 			+pad(0 2rem 0 0)
-			+media-breakpoint-up(lg)
-				margin-top: 0
-			// +pad(2rem)
 			max-height: 450px
 			display: flex
 			flex-direction: column
-			// background: darken(color-get($mau,trang) ,3%)
 			overflow-y: scroll
+			+media-breakpoint-up(lg)
+				margin-top: 0
 		+media-breakpoint-up(md)
 			img 
 				+opacity(0)

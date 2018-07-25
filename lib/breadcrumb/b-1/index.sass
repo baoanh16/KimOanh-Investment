@@ -1,7 +1,4 @@
 @import ../../_includes
-//////////////////////////////////////
-// CODE
-//////////////////////////////////////
 
 .canhcam-breadcrumb-1
 	position: relative
@@ -22,16 +19,7 @@
 			+pad(0)
 			position: relative
 			background: none
-			// +opacity(.8)
-			// &:before
-			// 	content: ''
-			// 	display: block
-			// 	min-width: 1000px
-			// 	height: 2.5rem
-			// background: color-get($mau,main)
-			// 	+pos(abs, 0 100% null null)
 			li
-				// background: color-get($mau,main)
 				+pad(1rem .5rem)
 				position: relative
 				line-height: 1.5rem
@@ -50,22 +38,8 @@
 						line-height: 1
 						overflow: hidden
 						padding-right: 0.5rem
-				// + li
-				// 	&:before
-				// 		content: none
-				// &:last-child
-				// 	&:after
-				// 		content: ''
-				// 		display: inline-block
-				// 		width: 0
-				// 		height: 0
-				// 		border-bottom: 2.5rem solid color-get($mau,main)
-				// 		border-right: 2.5rem solid transparent
-				// 		+pos(abs, 0 -2.5rem null null)
 	.owl-carousel
 		position: relative
-
-		// Main
 		.owl-stage-outer
 			.item
 				position: relative
@@ -93,7 +67,6 @@
 						+media-breakpoint-up(md)
 							max-width: 50%
 							margin: 0 auto 1rem auto
-		// Nav
 		.owl-nav
 			button
 				&.owl-prev, &.owl-next
@@ -124,7 +97,6 @@
 						+pos(abs, 50% null null 1rem)
 					&.owl-next
 						+pos(abs, 50% 1rem null null)
-		// Dots
 		.owl-dots
 			+pos(abs, null null 0 0)
 			width: 100%

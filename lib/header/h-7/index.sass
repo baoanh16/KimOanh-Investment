@@ -32,21 +32,14 @@
 		position: relative
 		+pad(0)
 		img
-			max-height: 2rem
+			max-height: 2.5rem
 			+transition(all ease-in-out .3s)
 	.hotline
 		+pad(0 1rem 0 0)
 		+media-breakpoint-up(md)
 			+pad(0 .5rem)
-		+media-breakpoint-up(lg)
-			// +pad(0 1.5rem 0 1rem)
 		ul
 			margin-bottom: 0
-			li
-				// span
-				// 	display: none
-				// img
-				// 	max-height: 1.5rem
 		select
 			margin-bottom: 1rem
 	.custom-select
@@ -99,7 +92,6 @@
 			+pos(fix, 0 0 null null)
 			z-index: 999
 	+media-breakpoint-up(md)
-		// border-bottom: 0
 		&.fixedheader
 			&.active
 				+box-sha()
@@ -111,13 +103,9 @@
 				+pos(abs, 1.1rem null null null)
 				+media-breakpoint-up(lg)
 					+pos(abs, 1.2rem null null null)
-				// z-index: 1000
-				// +pad(.25rem .15rem)
-				// background: color-get($mau,trang)
-				// +bor-rad(3px)
 				img
 					max-height: initial
-					max-width: 7rem
+					// max-width: 7rem
 			.navbar-nav
 				.nav-item
 					margin-left: 1px
@@ -130,11 +118,9 @@
 						text-align: center
 						height: 100%
 						&:hover
-							// +box-sha(0 -3px 0 color-get($mau,main), inset)
 							color: color-get($mau,main)
 					&.active, &.show
 						.nav-link
-							// +box-sha(0 -3px 0 color-get($mau,main), inset)
 							color: color-get($mau,main)
 
 	+media-breakpoint-up(md)
@@ -187,9 +173,9 @@
 					display: none
 	+media-breakpoint-up(lg)
 		.navbar
-			.navbar-brand
-				img
-					max-width: 10rem
+			// .navbar-brand
+			// 	img
+			// 		max-width: 8rem
 			.navbar-nav
 				.nav-item
 					.nav-link
@@ -205,28 +191,12 @@
 				.navbar-brand
 					img
 						max-width: 3.5rem
-				// .navbar
-				// 	.navbar-nav
-				// 		.nav-item
-				// 			.nav-link
-				// 				+pad(1.5rem 1.25rem)
 	+media-breakpoint-up(xl)
 		.navbar
 			.navbar-nav
 				.nav-item
 					.nav-link
 						+fw(bold)
-						// +pad(2.5rem 1.25rem)
-		// &.fixedheader
-		// 	&.active
-		// 		.navbar
-		// 			.navbar-nav
-		// 				.nav-item
-		// 					.nav-link
-		// 						+pad(1.5rem 1.25rem)
-
-//////////////////////////////////////
-// CODE
 .canhcam-header-7
 	.hotline
 		+media-breakpoint-up(lg)
@@ -250,7 +220,6 @@
 		.input-group
 			input
 				display: inline-block
-				// width: 100%
 				+pad(0.375rem 0.75rem)
 				font-size: 1rem
 				line-height: 1.5
@@ -270,10 +239,3 @@
 					cursor: pointer
 					background: color-get($mau, main)
 					color: color-get($mau, trang)
-	// +media-breakpoint-up(lg)
-	// 	.navbar
-	// 		.navbar-nav
-	// 			.nav-item
-	// 				.nav-link
-	// 					+pad(2.1rem .5rem)
-//////////////////////////////////////

@@ -1,32 +1,13 @@
 @import ../../_includes
-
-// .canhcam-form-1
-// 	+pad(2rem 0)
-// 	+media-breakpoint-up(lg)
-// 		+pad(4rem 0)
-	// .info
-	// 	h3
-	// 		+fz(1.1rem)
-	// 		// text-transform: uppercase
-	// 	.inf
-	// 		+pad(2rem)
-	// 		h2
-	// 			+fz(1.3rem)
-	// form
-	// 	.help-block
-	// 		ul
-	// 			margin-bottom: 0
-	// 			+fz(.9rem)
-	// 			color: color-get($mau,do-1)
-	
-//////////////////////////////////////
-// customize
 .canhcam-form-1
 	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
 	.info
 		h3
 			+fz(1.1rem)
-			// text-transform: uppercase
+			+fw(400)
+			margin-bottom: 3rem
 		.inf
 			+pad(2rem)
 			h2
@@ -38,7 +19,7 @@
 				+fz(.9rem)
 				color: color-get($mau,do-1)
 
-	.ct-subject
+	.ct-address
 		display: none
 	.form-group
 		position: relative
@@ -61,6 +42,8 @@
 			+mar(0 auto)
 	.wrap-contact
 		#ctl00_mainContent_ctl05_pnlSend
+			display: flex
+			flex-direction: column
 			.form-group
 				width: 100%
 				&.ct-button
@@ -72,10 +55,10 @@
 						background: color-get($mau,main)
 						color: color-get($mau,trang)
 						border-radius: 0
-						width: 6rem
+						+pad(0.6rem 2rem)
 			+media-breakpoint-up(lg)
+				flex-direction: row
 				+mar(0 -15px)
-				display: flex
 				flex-wrap: wrap
 				justify-content: center
 				.form-group

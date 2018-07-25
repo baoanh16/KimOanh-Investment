@@ -9,32 +9,16 @@
 			+fz(1.15rem)
 			color: color-get($mau, trang)
 			+fw(600)
-		// .lines
-		// 	background: url('../img/totto/footer-line.png') top left no-repeat
-		// 	height: 4px
-		// 	width: 100%
 		.text-details
 			color: darken(color-get($mau,trang), 50%)
 		.subscribe
 			.form-group
 				position: relative
 				button
-					// position: absolute
-					// right: 0
-					// top: 0
-					// width: 80px
-					// border: 1px solid color-get($mau,trang)
-					// border-left: none
-					// background: none
 					+bor-rad(0)
 					&.disabled
 						+opacity(1)
 				input
-					// background: rgba(0,0,0,.2)
-					// +bor-rad(0)
-					// border: 0
-					// padding-left: 0
-					// border: 1px solid color-get($mau,trang)
 					&:focus
 						outline: none
 						+box-sha(none)
@@ -105,22 +89,13 @@
 						&:hover
 							text-decoration: underline
 							color: lighten(color-get($mau,trang), 0%)
-	// .copy-right
-	// 	font-size: .8rem
-	// 	padding: .75rem 1rem
-	// 	background: darken(color-get($mau,trang), 90%)
-	// 	color: darken(color-get($mau,trang), 20%)
-		// text-transform: uppercase
-	// Khi lên Tablet
 	+media-breakpoint-up(md)
 		.footer-content
-			// padding: 4rem 0
 			.slogan
 				.quote
 					padding-left: 2rem
 				.social-list
 					margin: 1rem 0 0 0
-	// Khi lên PC
 	+media-breakpoint-up(lg)
 		.footer-content
 			.list-group
@@ -128,9 +103,6 @@
 					padding: .15rem 0
 			.slogan
 				display: flex
-
-/////////////////////////////////////////////
-//// CODE
 .canhcam-footer-7
 	.canhcam-sub
 		.subscribe
@@ -221,4 +193,3 @@
 						content: none
 		.Module.Module-200, .ModuleContent, .social-icon
 			height: 100%
-/////////////////////////////////////////////

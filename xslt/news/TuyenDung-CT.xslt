@@ -25,7 +25,7 @@
 								<div class="clearfix download">
 									<a class="btn btn-download" href="#">Tải mẫu đơn xin việc
 									</a>
-									<a class="btn btn-getjob" href="javascript:void(0)">
+									<a class="btn btn-getjob" id="ungTuyen" href="javascript:void(0)">
 										<xsl:value-of select="/NewsDetail/ApplyText"></xsl:value-of>
 									</a>
 								</div>

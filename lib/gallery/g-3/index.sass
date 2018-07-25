@@ -13,20 +13,17 @@
 		.item
 			text-decoration: none
 			height: 100%
-			// +bor-rad(5px)
 			overflow: hidden
 			cursor: pointer
 			.hidden
 				display: none
 			figure
 				overflow: hidden
-				// +bor-rad(5px)
 				position: relative
 				margin-bottom: 1.3rem
 				.boxzoom
 					overflow: hidden
 					position: relative
-					// +bor-rad(5px)
 					&:after
 						content: ''
 						display: block
@@ -37,11 +34,7 @@
 						+pos(abs, 0 0 null null)
 						+transition(all .5s ease-in-out)
 						opacity: 0
-					// +media-breakpoint-up(sm)
-					// 	max-height: 200px
-					// 	min-height: 200px
 					img
-						// +bor-rad(5px 5px 0 0)
 						+transition(all .5s ease-in-out)
 						width: 100%
 				figcaption
@@ -90,8 +83,6 @@
 .lg-backdrop.in
 	background: rgba(255,255,255,.8)
 
-//////////////////////////////////////
-// CODE
 .canhcam-gallery-3
 	.gallery-details
 		.row
@@ -108,4 +99,3 @@
 						p
 							color: color-get($mau, trang)
 							+fz(0.85rem)
-//////////////////////////////////////
