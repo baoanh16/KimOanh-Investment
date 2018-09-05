@@ -30,6 +30,10 @@
 						<xsl:attribute name="bg-img-responsive">
 							<xsl:value-of select="ImageUrl"></xsl:value-of>
 						</xsl:attribute>
+						<img class="img-fluid">
+						<xsl:attribute name="src">
+							<xsl:value-of select="ImageUrl"></xsl:value-of>
+						</xsl:attribute></img>
 					</div>
 				</a>
 			</div>

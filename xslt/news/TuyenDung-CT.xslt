@@ -23,7 +23,11 @@
 									<xsl:value-of select="/NewsDetail/FullContent" disable-output-escaping="yes"></xsl:value-of>
 								</div>
 								<div class="clearfix download">
-									<a class="btn btn-download" href="#">Tải mẫu đơn xin việc
+									<a class="btn btn-download" download="">
+										<xsl:attribute name="href">
+											<xsl:value-of select="FileUrl" disable-output-escaping="yes"/>
+										</xsl:attribute>
+										Tải mẫu đơn xin việc
 									</a>
 									<a class="btn btn-getjob" id="ungTuyen" href="javascript:void(0)">
 										<xsl:value-of select="/NewsDetail/ApplyText"></xsl:value-of>

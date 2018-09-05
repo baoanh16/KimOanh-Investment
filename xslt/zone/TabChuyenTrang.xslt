@@ -13,7 +13,7 @@
 		</div>
 		<div class="row">
 			<div class="col">
-				<ul class="nav justify-content-center nav-pills" data-select="">
+				<ul class="nav justify-content-center nav-pills">
 					<xsl:apply-templates select="/ZoneList/Zone"></xsl:apply-templates>
 				</ul>
 			</div>

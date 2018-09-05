@@ -26,8 +26,8 @@
 						<!--Other News-->
 						<div class="col-lg-3">
 							<div class="othernews" data-fix="80" data-fix-type="initial" data-fix-change="sticky">
-								<h2>
-									<xsl:value-of select="/NewsDetail/NewsOtherText"></xsl:value-of>
+								<h2>Tin tức khác
+									<!-- <xsl:value-of select="/NewsDetail/NewsOtherText"></xsl:value-of> -->
 								</h2>
 								<hr>
 								</hr>
