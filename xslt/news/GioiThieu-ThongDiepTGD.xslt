@@ -21,7 +21,7 @@
 
 	
 	<xsl:template match="News">
-		<div class="col-md order-md-1">
+		<div class="col-md order-md-1 scroll">
 			<xsl:attribute name="bg-img">
 				<xsl:value-of select="ImageUrl"></xsl:value-of>
 			</xsl:attribute>
@@ -31,7 +31,7 @@
 				</xsl:attribute>
 			</img>
 		</div>
-		<div class="col-md order-md-2">
+		<div class="col-md order-md-2 scroll">
 			<div class="text">
 				<xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
 			</div>

@@ -37,4 +37,21 @@
 				&:hover
 					a
 						color: color-get($mau, main)
+		thead,tbody
+			tr
+				th,td
+					padding: .75rem 1rem
+					align-items: center
+					vertical-align: middle
+					&:nth-child(2),&:nth-child(3)
+						display: none
+				+media-breakpoint-up(md)
+					th,td
+						+pad(0.75rem 0.75rem 0.75rem 2rem)
+						&:nth-child(2)
+							display: table-cell
+				+media-breakpoint-up(lg)
+					th,td
+						&:nth-child(3)
+							display: table-cell
 

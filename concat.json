@@ -43,7 +43,8 @@
             "bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js",
             "bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js",
             "bower_components/freewall/freewall.js",
-            "bower_components/matchHeight/dist/jquery.matchHeight.js"
+            "bower_components/matchHeight/dist/jquery.matchHeight.js",
+            "bower_components/k-animation/dist/js/kAnimation.min.js"
         ],
         "css": [
             "bower_components/select2/dist/css/select2.min.css",
@@ -57,7 +58,8 @@
             "bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.standalone.css",
             "bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css",
             "bower_components/owl.carousel/dist/assets/owl.carousel.min.css",
-            "bower_components/owl.carousel/dist/assets/owl.theme.default.css"
+            "bower_components/owl.carousel/dist/assets/owl.theme.default.css",
+            "bower_components/k-animation/dist/css/addons.css"
         ]
     }
 }

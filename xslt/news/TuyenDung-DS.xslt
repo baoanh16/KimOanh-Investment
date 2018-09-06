@@ -39,7 +39,7 @@
 
 	<xsl:template match="News">
 		<tr>
-			<th class="d-flex align-items-start" scope="row">
+			<th class="d-flex" scope="row">
 				<a class="mr-auto">
 					<xsl:attribute name="href">
 						<xsl:value-of select="Url"></xsl:value-of>

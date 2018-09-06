@@ -25,7 +25,7 @@
 								<div class="clearfix download">
 									<a class="btn btn-download" download="">
 										<xsl:attribute name="href">
-											<xsl:value-of select="FileUrl" disable-output-escaping="yes"/>
+											<xsl:value-of select="/NewsDetail/FileUrl" disable-output-escaping="yes"/>
 										</xsl:attribute>
 										Tải mẫu đơn xin việc
 									</a>

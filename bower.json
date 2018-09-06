@@ -36,7 +36,8 @@
     "elevatezoom": "2.2.3",
     "k-responsive-menu": "4.0.1",
     "linearicons": "1.0.1",
-    "fancybox": "3.3.5"
+    "fancybox": "3.3.5",
+    "k-animation": "^6.0.2"
   },
   "devDependencies": {
     "matchHeight": "matchheight#^0.7.2"
