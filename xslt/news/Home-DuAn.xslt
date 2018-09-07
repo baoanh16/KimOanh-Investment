@@ -9,7 +9,7 @@
 					<div class="col-12">
 						<div class="kimoanh-title white">
 							<h2>
-								Dự án
+								<xsl:value-of select="/NewsList/ModuleTitle"></xsl:value-of>
 							</h2>
 							<span></span>
 						</div>
@@ -55,6 +55,15 @@
 						<xsl:value-of select="BriefContent"></xsl:value-of>
 					</p>
 					
+					<p class="mb-0">
+						<a class="btn btn-primary rounded-0">
+							<xsl:attribute name="href">
+								<xsl:value-of select="Url"></xsl:value-of>
+							</xsl:attribute>
+							Xem thêm
+							<i class="mdi mdi-arrow-right"></i>
+						</a>
+					</p>
 				</div>
 			</div>
 		</div>

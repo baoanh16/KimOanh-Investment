@@ -35,6 +35,7 @@
 					</h3>
 					<p class="descrip">
 						<xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
+						<xsl:value-of select="FullContent" disable-output-escaping="yes"></xsl:value-of>
 					</p>
 				</div>
 			</div>

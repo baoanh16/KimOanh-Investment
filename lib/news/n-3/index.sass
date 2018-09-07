@@ -23,8 +23,8 @@
 				color: color-get($mau,xam-10)
 				.fas
 					+mar(0 0.25rem 0 0)
-			.descrip
-				display: none
+			// .descrip
+			// 	display: none
 			.btn
 				+pad(0.5rem 1.75rem)
 				background: none
@@ -46,13 +46,21 @@
 				text-decoration: none
 				color: color-get($mau, den)
 			figcaption
-				+pad(2rem)
+				+pad(1rem .5rem)
+				+media-breakpoint-up(md)
+					+pad(2rem)
 				background: color-get($mau, xam-14)
-				display: none
+				// display: none
 			h3
 				+fz(1.15rem)
 				+fw(600)
 				color: color-get($mau, den-1)
+				overflow: hidden
+				text-overflow: ellipsis
+				display: -webkit-box
+				-webkit-line-clamp: 2
+				-webkit-box-orient: vertical
+				word-wrap: break-word
 			p, time
 				color: color-get($mau, den-2)
 			time

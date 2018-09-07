@@ -222,7 +222,7 @@ script(src='//oss.maxcdn.com/respond/1.4.2/respond.min.js')
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-5 col-12 text-center text-lg-left">
-                                    <span>© 2018 Kim Oanh Vietnam. All right reserved. Designed by canhcam.</span>
+                                    <span>© 2018 Kim Oanh Investment. All right reserved. Designed by <a href="https://canhcam.vn" style="color: white">Cánh Cam</a>.</span>
                                 </div>
                                 <div class="col-lg-2 col-12">
                                     <portal:ModuleWrapper ID="mdl200" runat="server" ConfigureModuleId="200" />

@@ -7,7 +7,7 @@
 		<div class="row">
 			<div class="col-12">
 				<div class="kimoanh-title orange">
-					<h2><xsl:value-of select="/ZoneList/Title"></xsl:value-of></h2><span></span>
+					<h2><xsl:value-of select="/ZoneList/ModuleTitle"></xsl:value-of></h2><span></span>
 				</div>
 			</div>
 		</div>

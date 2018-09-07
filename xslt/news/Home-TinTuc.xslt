@@ -9,7 +9,7 @@
 					<div class="col-12">
 						<div class="kimoanh-title orange">
 							<h2>
-								Tin tức
+								<xsl:value-of select="/NewsList/ModuleTitle"></xsl:value-of>
 							</h2>
 							<span></span>
 						</div>

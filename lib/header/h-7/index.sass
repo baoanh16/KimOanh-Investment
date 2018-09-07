@@ -53,8 +53,8 @@
 
 	+media-breakpoint-down(sm)
 		.navbar-collapse
-			display: flex
-			flex-direction: column
+			// display: flex
+			// flex-direction: column
 			+transition(all .3s ease-in-out)
 			+pos(fix, 0 100% null null)
 			background: rgba(red(color-get($mau,main)),green(color-get($mau,main)),blue(color-get($mau,main)),.95)
@@ -64,7 +64,7 @@
 			display: block
 			+pad(0)
 			.search
-				order: 1
+				// order: 1
 				+pad(0 2rem)
 				.input-group
 					width: 100%
@@ -73,7 +73,7 @@
 					color: color-get($mau,main)
 					border-color: darken(color-get($mau,trang),5%)
 			.navbar-nav
-				order: 2
+				// order: 2
 				+pad(1rem 2rem)
 				+fz(1.3rem)
 				font-weight: 300
@@ -93,19 +93,22 @@
 			z-index: 999
 	+media-breakpoint-up(md)
 		&.fixedheader
+			.navbar-brand
+				top: 10px
+				img
+					max-height: initial
+					max-width: 7rem
 			&.active
 				+box-sha()
+				// .navbar-brand
+				// 	img
+				// 		max-width: 3.5rem
 		.navbar
 			padding-top: 0
 			padding-bottom: 0
 			position: relative
 			.navbar-brand
-				+pos(abs, 1.1rem null null null)
-				+media-breakpoint-up(lg)
-					+pos(abs, 1.2rem null null null)
-				img
-					max-height: initial
-					// max-width: 7rem
+				+pos(abs, 1rem null null null)
 			.navbar-nav
 				.nav-item
 					margin-left: 1px
@@ -122,18 +125,6 @@
 					&.active, &.show
 						.nav-link
 							color: color-get($mau,main)
-
-	+media-breakpoint-up(md)
-		&.fixedheader
-			.navbar-brand
-				img
-					max-width: 4rem
-			&.active
-				.navbar-brand
-					img
-						max-width: 2.2rem
-		.navbar
-			position: relative
 		.navbar-collapse
 			position: static
 		.search
@@ -147,10 +138,8 @@
 			+bor-rad(0)
 			.input-group
 				width: 100%
-
 			&.active
 				display: block
-
 		.btnsearch
 			margin-left: .5rem
 			.btn
@@ -173,9 +162,6 @@
 					display: none
 	+media-breakpoint-up(lg)
 		.navbar
-			// .navbar-brand
-			// 	img
-			// 		max-width: 8rem
 			.navbar-nav
 				.nav-item
 					.nav-link
@@ -185,17 +171,19 @@
 						+transition(all ease-in-out .3s)
 		&.fixedheader
 			.navbar-brand
+				top: 1.2rem
 				img
 					max-width: 8rem
 			&.active
 				.navbar-brand
-					img
-						max-width: 3.5rem
+					// img
+					// 	max-width: 5rem
 	+media-breakpoint-up(xl)
 		.navbar
 			.navbar-nav
 				.nav-item
 					.nav-link
+						+pad(2rem 1.75rem)
 						+fw(bold)
 .canhcam-header-7
 	.hotline
