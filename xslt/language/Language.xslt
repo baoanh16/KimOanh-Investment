@@ -3,7 +3,7 @@
     <xsl:output method="html" indent="yes"/>
 
     <xsl:template match="/">
-        <ul class="language">
+        <ul class="language mb-0 list-unstyled ml-4" k-menu-map-to="#language">
             <xsl:apply-templates select="/LanguageList/Language"></xsl:apply-templates>
         </ul>
     </xsl:template>
@@ -12,16 +12,18 @@
         <li>
             <xsl:if test="IsActive='true'">
                 <xsl:attribute name="class">
-                    <xsl:text>active</xsl:text>
+                    <xsl:text>d-none</xsl:text>
                 </xsl:attribute>
             </xsl:if>
             <a>
                 <xsl:attribute name="href">
                     <xsl:value-of select="Url"></xsl:value-of>
                 </xsl:attribute>
-                <xsl:attribute name="title">
-                    <xsl:value-of select="Title"></xsl:value-of>
+				<img>
+                <xsl:attribute name="src">
+                    <xsl:value-of select="ImageUrl"></xsl:value-of>
                 </xsl:attribute>
+				</img>
                 <!--<img>
                     <xsl:attribute name="src">
                         <xsl:value-of select="ImageUrl"></xsl:value-of>
@@ -30,7 +32,7 @@
                         <xsl:value-of select="Title"></xsl:value-of>
                     </xsl:attribute>
                 </img>-->
-                <xsl:value-of select="Title"></xsl:value-of>
+                <!-- <xsl:value-of select="Title"></xsl:value-of> -->
             </a>
         </li>
     </xsl:template>
